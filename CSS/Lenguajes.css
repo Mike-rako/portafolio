@@ -1,0 +1,246 @@
+#tituloLenguajes {
+    text-align: center;
+    padding: 35px;
+}
+
+#contenedorLenguajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 35px;
+    gap: 25px;
+}
+
+.BarrasLenguajes {
+    display: flex;
+    padding: 25px 60px;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--color-bg-darker);
+    border: 2px solid var(--color-border);
+    border-radius: 15px;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.BarrasLenguajes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(204, 32, 85, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.BarrasLenguajes:hover::before {
+    opacity: 1;
+}
+
+.BarrasLenguajes:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.BarrasLenguajes h2 {
+    color: var(--color-text);
+    font-size: 1rem;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+#Barra_Completa_Lenguajes {
+    height: 8px;
+    background-color: var(--color-border);
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#Barra_Completa_Lenguajes > div {
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#Barra_Completa_Lenguajes > div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#Barra_actual_Python {
+    background: linear-gradient(90deg, #306998, #4B8BBE);
+    width: 0;
+}
+
+.BarrasLenguajes:hover #Barra_actual_Python {
+    width: 95%;
+}
+
+#Barra_actual_Csharp {
+    background: linear-gradient(90deg, #512BD4, #7B4FD8);
+    width: 0;
+}
+
+.BarrasLenguajes:hover #Barra_actual_Csharp {
+    width: 70%;
+}
+
+#Barra_actual_Java {
+    background: linear-gradient(90deg, #EA2D2E, #F47B20);
+    width: 0;
+}
+
+.BarrasLenguajes:hover #Barra_actual_Java {
+    width: 50%;
+}
+
+#Barra_actual_HTML {
+    background: linear-gradient(90deg, #E44D26, #F16529);
+    width: 0;
+}
+
+.BarrasLenguajes:hover #Barra_actual_HTML {
+    width: 85%;
+}
+
+#Barra_actual_CSS {
+    background: linear-gradient(90deg, #264DE4, #2965F1);
+    width: 0;
+}
+
+.BarrasLenguajes:hover #Barra_actual_CSS {
+    width: 75%;
+}
+
+#Barra_actual_SQL {
+    background: linear-gradient(90deg, #00758F, #00A4C6);
+    width: 0;
+}
+
+.BarrasLenguajes:hover #Barra_actual_SQL {
+    width: 65%;
+}
+
+#contenedor_Herramientas {
+    display: flex;
+    padding: 40px 20px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: solid 2px;
+    border-image: linear-gradient(to right, transparent 20%, var(--color-border) 50%, transparent 80%) 1;
+    margin-bottom: 20px;
+}
+
+#contenedor_Herramientas div {
+    border: var(--color-border) 2px solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-bg-darker);
+    transition: var(--transition-smooth);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+#contenedor_Herramientas div::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: 0;
+}
+
+#contenedor_Herramientas div:hover::before {
+    width: 200px;
+    height: 200px;
+}
+
+#contenedor_Herramientas div:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(204, 32, 85, 0.3);
+}
+
+#contenedor_Herramientas div p {
+    margin: 0;
+    color: var(--color-text);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+@media(max-width: 600px) {
+    #contenedorLenguajes {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    
+    #contenedor_Herramientas {
+        padding: 30px 15px;
+        gap: 12px;
+    }
+    
+    #contenedor_Herramientas div {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .BarrasLenguajes {
+        padding: 20px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    #Barra_Completa_Lenguajes {
+        width: 100%;
+    }
+    
+    .BarrasLenguajes h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    #contenedorLenguajes {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 25px;
+    }
+    
+    .BarrasLenguajes {
+        padding: 20px 30px;
+        gap: 20px;
+    }
+}

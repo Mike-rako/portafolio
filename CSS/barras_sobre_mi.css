@@ -1,0 +1,35 @@
+#contenedorBarras{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#barra{
+    height: 3px;
+    width: 55%;
+    background-color: black;
+}
+#barraBackend{
+    height: 3px;
+    width: 90%;
+    background-color: #a81741;
+}
+#barraBaseDatos{
+    height: 3px;
+    width: 80%;
+    background-color: #a81741;
+}
+#barraWeb{
+    height: 3px;
+    width: 70%;
+    background-color: #a81741;
+}
+#barraDesSoftware{
+    height: 3px;
+    width: 80%;
+    background-color: #a81741;
+}
+@media(max-width:600px){
+    #barra{
+        width: 95px;
+    }
+}

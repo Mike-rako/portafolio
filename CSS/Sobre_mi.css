@@ -1,0 +1,152 @@
+.Seccion_sobre_mi{
+    border-top: 1px solid #a81741;
+}
+.Seccion_sobre_mi h1{
+    text-align: center;
+    color: #cecece;
+}
+.Seccion_sobre_mi #datos h4{
+    font-size: 13pt;
+}
+#separacion{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+}
+.titulo{
+    scroll-margin-top: 125px;
+    text-align: center;
+    padding: 45px;
+}
+#contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 15px;
+    padding: 15px;
+}
+#CV_Sobre_mi{
+    margin: 0px auto;
+    font-family:monospace;
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    border: #cc2055 solid 2px;
+    border-radius: 9px;
+    background-color: transparent;
+    color: #cecece;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 12pt;
+
+}
+#CV_Sobre_mi:hover{
+    background-color: #cc2055;
+}
+#CV_Sobre_mi img{
+    width: auto;
+    height: 20px;
+}
+#Contenedor_Habilidades_blandas{
+    font-family:monospace;
+    display: flex;
+    gap: 10px;
+}
+.Habilidades_blandas{
+    background-color: #131619;
+    border: #272c33 solid 1px;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    margin: 5px;
+    transition: box-shadow 0.3s ease;
+}
+#datos{
+    padding: 0px 50px 50px 50px;
+}
+#datos_barras{
+    padding: 40px;
+}
+.tarjetas_especializaciones {
+    padding: 30px 20px;
+    text-align: center;
+    justify-items: center;
+    border: var(--color-border) solid 2px;
+    border-radius: 20px;
+    background-color: var(--color-bg-darker);
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.tarjetas_especializaciones::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(204, 32, 85, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tarjetas_especializaciones:hover::before {
+    opacity: 1;
+}
+
+.tarjetas_especializaciones img {
+    height: 80px;
+    width: auto;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(204, 32, 85, 0.3));
+}
+
+.tarjetas_especializaciones:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-primary);
+    box-shadow: 0 15px 40px rgba(204, 32, 85, 0.3);
+}
+
+.tarjetas_especializaciones:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.tarjetas_especializaciones h1 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: var(--color-primary);
+}
+
+.tarjetas_especializaciones h3 {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin: 10px 0;
+}
+@media(max-width:600px){
+    #datos{
+        padding: 20px;
+    }
+    #datos_barras{
+        padding: 20px;
+    }
+    #separacion{
+        display: flex;
+        flex-direction: column;
+    }
+    #contenedor{
+        margin: 7px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 600px) and (max-width: 1024px){
+    #separacion{
+        display: flex;
+        flex-direction: column;
+    }
+}

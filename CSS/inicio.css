@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  background-color: #0f1114;
+  font-family: monospace;
+  color: #cecece;
+}
+#foto {
+  height: 160px;
+  width: auto;
+  border-radius: 100px;
+  padding: 20px;
+    border: #cc2055 3px outset;
+}
+main h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15pt;
+  color: #cc2055;
+}
+main h4 {
+  color: #cecece;
+  font-size: 13pt;
+}
+main > div:last-child {
+  display: flex;
+  padding: 50px;
+  gap: 30px;
+  font-size: 12pt;
+}
+main > div:last-child img {
+  width: auto;
+  height: 20px;
+}
+main a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#CV_Proyectos {
+  display: flex;
+  padding: 10px;
+  border: #cc2055 solid 2px;
+  border-radius: 9px;
+  background-color: transparent;
+  color: #cc2055;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+#CV_Proyectos:hover {
+  background-color: #cc2055;
+  color: #0f1114;
+}
+.rotacion {
+  display: flex;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: #cc2055;
+  color: #0f1114;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  transition: transform 0.2s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  border: #cc2055 solid 2px;
+}
+.rotacion:hover {
+  background-color: transparent;
+  color: #cc2055;
+  transform: rotateY(360deg);
+}
+@media (max-width: 600px) {
+  main > div:last-child {
+    padding: 80px;
+    flex-direction: column;
+  }
+  main h4 {
+    font-size: 9pt;
+  }
+}
