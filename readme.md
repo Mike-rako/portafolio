@@ -7,6 +7,9 @@ Portafolio web profesional desarrollado para mostrar mis proyectos, habilidades 
 [![CSS](https://img.shields.io/badge/CSS-3-blue)](https://developer.mozilla.org/es/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
+**Portafolio online:** 
+https://portafoliomichaelbarillas.netlify.app/
+
 ## 🌟 Características
 
 - ✨ **Diseño Moderno y Responsivo**: Adaptable a cualquier dispositivo (móvil, tablet, desktop)
