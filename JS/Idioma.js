@@ -61,20 +61,20 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
     ver_codigo: "Ver código",
     cerrar: "Cerrar",
 
-    proyecto1_titulo: "Calculadora Mallas Electrosoldadas",
-    proyecto1_desc: "Aplicación web interactiva desarrollada con HTML, CSS y JavaScript que calcula materiales necesarios para construcción de mallas electrosoldadas. Incluye interfaz intuitiva y cálculos precisos en tiempo real.",
+    proyecto1_titulo: "Portafoio",
+    proyecto1_desc: "Es el portafolio en el ahora mismo te necuentras, fue desarrollado para presentar mis proyectos, habilidades y conocimientos en desarrollo de aplicaciones. Está diseñado como una plataforma personal donde muestro mi trabajo, organizo mis proyectos y aplico buenas prácticas de diseño, estructura y experiencia",
 
-    proyecto2_titulo: "Algoritmo de Clasificación de Figuras Geométricas",
-    proyecto2_desc: "Sistema basado en Machine Learning con Python y scikit-learn que clasifica figuras geométricas (triángulos, cuadrados, círculos) usando análisis de imágenes. Implementa preprocesamiento de datos, entrenamiento de modelo y evaluación de precisión.",
+    proyecto2_titulo: "Auto clicker",
+    proyecto2_desc: "Una aplicación de escritorio con interfaz gráfica para automatizar clicks del mouse en Windows. Ideal para tareas repetitivas que requieren clicks constantes en posiciones específicas de la pantalla.",
 
-    proyecto3_titulo: "API de Listado de Productos",
-    proyecto3_desc: "API RESTful desarrollada en C# con Entity Framework que gestiona un catálogo de productos. Implementa operaciones CRUD completas, validación de datos y respuestas JSON estructuradas.",
+    proyecto3_titulo: "sistema-heladeria",
+    proyecto3_desc: "Aplicación de escritorio hecha con fines educativos para gestionar pedidos de una heladería con interfaz gráfica. Permite crear órdenes personalizadas de helados con diferentes sabores, toppings y tipos, calculando automáticamente precios con impuestos y descuentos.",
 
-    proyecto4_titulo: "Sistema de Gestión Académica",
-    proyecto4_desc: "Aplicación de escritorio en C# con Windows Forms para administración de instituciones educativas. Gestiona datos de estudiantes, docentes, materias y calificaciones con base de datos SQL Server.",
+    proyecto4_titulo: "Pagina web de Tienda musical",
+    proyecto4_desc: "Página web desarrollada como proyecto académico, que incluye un catálogo de productos de prueba y un carrito de compras funcional, con visualización de productos seleccionados y cálculo automático del subtotal",
 
-    proyecto5_titulo: "API del Tribunal Supremo de Elecciones",
-    proyecto5_desc: "API web scraping desarrollada en Python que extrae y estructura información oficial del TSE de Costa Rica. Implementa técnicas de scraping automatizado, limpieza de datos y exposición vía endpoints RESTful.",
+    proyecto5_titulo: "tse-costa-rica-api",
+    proyecto5_desc: "API REST desarrollada con FastAPI para consultar información del Registro Civil de Costa Rica, utilizando datos públicos proporcionados por el Tribunal Supremo de Elecciones (TSE). La API permite realizar consultas eficientes por número de cédula o por nombre completo, con validación de datos y respuestas en formato JSON.",
 
     proyecto6_titulo: "Sistema de Automatización de Documentos Administrativos",
     proyecto6_desc: "Aplicación de escritorio desarrollada en Python (PyQt5) para el procesamiento y gestión de documentos administrativos. El sistema permite extraer información relevante desde archivos Word y generar borradores estructurados mediante integración con APIs de inteligencia artificial. Incluye gestión multi-entidad, validación de datos, almacenamiento persistente y exportación de reportes en Excel. <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, por confidencialidad no puedo entrar en detalles del proyecto pero esta respaldado por un certificado emitido por la empresa.",
@@ -169,20 +169,20 @@ I bring not only solid technical skills, but also teamwork ability, effective co
     ver_codigo: "View code",
     cerrar: "Close",
 
-    proyecto1_titulo: "Electrowelded Mesh Calculator",
-    proyecto1_desc: "Interactive web application developed with HTML, CSS and JavaScript that calculates materials needed for electrowelded mesh construction. Includes intuitive interface and precise real-time calculations.",
+    proyecto1_titulo: "Portafolio",
+    proyecto1_desc: "This is the portfolio you are currently viewing, developed to present my projects, skills and knowledge in application development. It is designed as a personal platform where I showcase my work, organize my projects and apply good practices in design, structure and experience",
 
-    proyecto2_titulo: "Geometric Figures Classification Algorithm",
-    proyecto2_desc: "Machine Learning based system with Python and scikit-learn that classifies geometric figures (triangles, squares, circles) using image analysis. Implements data preprocessing, model training and accuracy evaluation.",
+    proyecto2_titulo: "Auto clicker",
+    proyecto2_desc: "A desktop application with graphical interface to automate mouse clicks on Windows. Ideal for repetitive tasks that require constant clicks at specific positions on the screen.",
 
-    proyecto3_titulo: "Product Listing API",
-    proyecto3_desc: "RESTful API developed in C# with Entity Framework that manages a product catalog. Implements complete CRUD operations, data validation and structured JSON responses.",
+    proyecto3_titulo: "ice-cream-shop-system",
+    proyecto3_desc: "Desktop application made for educational purposes to manage ice cream shop orders with graphical interface. Allows creating custom ice cream orders with different flavors, toppings and types, automatically calculating prices with taxes and discounts.",
 
-    proyecto4_titulo: "Academic Management System",
-    proyecto4_desc: "Desktop application in C# with Windows Forms for educational institution administration. Manages student, teacher, subject and grade data with SQL Server database.",
+    proyecto4_titulo: "Music Store Web Page",
+    proyecto4_desc: "Web page developed as an academic project, which includes a test product catalog and a functional shopping cart, with visualization of selected products and automatic subtotal calculation",
 
-    proyecto5_titulo: "Electoral Supreme Court API",
-    proyecto5_desc: "Web scraping API developed in Python that extracts and structures official information from Costa Rica's TSE. Implements automated scraping techniques, data cleaning and exposure via RESTful endpoints.",
+    proyecto5_titulo: "tse-costa-rica-api",
+    proyecto5_desc: "REST API developed with FastAPI to query information from the Costa Rican Civil Registry, using public data provided by the Supreme Electoral Court (TSE). The API allows efficient queries by ID number or full name, with data validation and responses in JSON format.",
 
     proyecto6_titulo: "Administrative Documents Automation System",
     proyecto6_desc: "Desktop application developed in Python (PyQt5) for administrative document processing and management. The system allows extracting relevant information from Word files and generating structured drafts through integration with artificial intelligence APIs. Includes multi-entity management, data validation, persistent storage and Excel report export. <br> Developed during a professional internship at the XperttaLegal law firm, due to confidentiality I cannot go into details of the project but it is backed by a certificate issued by the company.",
