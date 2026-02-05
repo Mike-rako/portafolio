@@ -77,3 +77,8 @@ main a {
     font-size: 9pt;
   }
 }
+@media (max-width: 600px) {
+  #foto{
+    scale: 0.7;
+  }
+}

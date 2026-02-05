@@ -61,7 +61,7 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
     ver_codigo: "Ver código",
     cerrar: "Cerrar",
 
-    proyecto1_titulo: "Portafoio",
+    proyecto1_titulo: "Portafolio",
     proyecto1_desc: "Es el portafolio en el ahora mismo te necuentras, fue desarrollado para presentar mis proyectos, habilidades y conocimientos en desarrollo de aplicaciones. Está diseñado como una plataforma personal donde muestro mi trabajo, organizo mis proyectos y aplico buenas prácticas de diseño, estructura y experiencia",
 
     proyecto2_titulo: "Auto clicker",
@@ -73,14 +73,17 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
     proyecto4_titulo: "Pagina web de Tienda musical",
     proyecto4_desc: "Página web desarrollada como proyecto académico, que incluye un catálogo de productos de prueba y un carrito de compras funcional, con visualización de productos seleccionados y cálculo automático del subtotal",
 
-    proyecto5_titulo: "tse-costa-rica-api",
-    proyecto5_desc: "API REST desarrollada con FastAPI para consultar información del Registro Civil de Costa Rica, utilizando datos públicos proporcionados por el Tribunal Supremo de Elecciones (TSE). La API permite realizar consultas eficientes por número de cédula o por nombre completo, con validación de datos y respuestas en formato JSON.",
+    proyecto5_titulo:"Sistema-de-Gestion-de-Inventario-ASP.NET",
+    proyecto5_desc:"Sistema de Gestión de Inventario Web desarrollado con ASP.NET Core MVC 8, C# y SQL Server, orientado a entornos empresariales. Implementa autenticación y autorización por roles, control transaccional de inventario (entradas y salidas) y reportería dinámica en tiempo real.Incluye dashboard administrativo con métricas, gráficas y alertas de stock bajo.Aplica buenas prácticas de arquitectura MVC, seguridad, validación de datos y Entity Framework Core.Diseño responsive con Bootstrap y enfoque en usabilidad y mantenibilidad del código.",
 
-    proyecto6_titulo: "Sistema de Automatización de Documentos Administrativos",
-    proyecto6_desc: "Aplicación de escritorio desarrollada en Python (PyQt5) para el procesamiento y gestión de documentos administrativos. El sistema permite extraer información relevante desde archivos Word y generar borradores estructurados mediante integración con APIs de inteligencia artificial. Incluye gestión multi-entidad, validación de datos, almacenamiento persistente y exportación de reportes en Excel. <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, por confidencialidad no puedo entrar en detalles del proyecto pero esta respaldado por un certificado emitido por la empresa.",
+    proyecto6_titulo: "tse-costa-rica-api",
+    proyecto6_desc: "API REST desarrollada con FastAPI para consultar información del Registro Civil de Costa Rica, utilizando datos públicos proporcionados por el Tribunal Supremo de Elecciones (TSE). La API permite realizar consultas eficientes por número de cédula o por nombre completo, con validación de datos y respuestas en formato JSON.",
 
-    proyecto7_titulo: "Sistema Automatizado de Monitoreo y Análisis de Publicaciones Judiciales",
-    proyecto7_desc: "Sistema desarrollado en Python para la extracción, procesamiento y análisis de información pública proveniente de fuentes oficiales. Automatiza la recolección diaria de publicaciones, integra datos externos mediante APIs, aplica análisis asistido por inteligencia artificial para clasificación de registros relevantes y genera reportes estructurados en Excel. La solución fue diseñada para ejecutarse de forma programada en infraestructura cloud run (Google Cloud), garantizando operación continua y escalable <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, respaldado por certificación emitida por la empresa.",
+    proyecto7_titulo: "Sistema de Automatización de Documentos Administrativos",
+    proyecto7_desc: "Aplicación de escritorio desarrollada en Python (PyQt5) para el procesamiento y gestión de documentos administrativos. El sistema permite extraer información relevante desde archivos Word y generar borradores estructurados mediante integración con APIs de inteligencia artificial. Incluye gestión multi-entidad, validación de datos, almacenamiento persistente y exportación de reportes en Excel. <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, por confidencialidad no puedo entrar en detalles del proyecto pero esta respaldado por un certificado emitido por la empresa.",
+
+    proyecto8_titulo: "Sistema Automatizado de Monitoreo y Análisis de Publicaciones Judiciales",
+    proyecto8_desc: "Sistema desarrollado en Python para la extracción, procesamiento y análisis de información pública proveniente de fuentes oficiales. Automatiza la recolección diaria de publicaciones, integra datos externos mediante APIs, aplica análisis asistido por inteligencia artificial para clasificación de registros relevantes y genera reportes estructurados en Excel. La solución fue diseñada para ejecutarse de forma programada en infraestructura cloud run (Google Cloud), garantizando operación continua y escalable <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, respaldado por certificación emitida por la empresa.",
 
     // Contacto
     titulo_contacto: "Contacto",
@@ -181,14 +184,18 @@ I bring not only solid technical skills, but also teamwork ability, effective co
     proyecto4_titulo: "Music Store Web Page",
     proyecto4_desc: "Web page developed as an academic project, which includes a test product catalog and a functional shopping cart, with visualization of selected products and automatic subtotal calculation",
 
-    proyecto5_titulo: "tse-costa-rica-api",
-    proyecto5_desc: "REST API developed with FastAPI to query information from the Costa Rican Civil Registry, using public data provided by the Supreme Electoral Court (TSE). The API allows efficient queries by ID number or full name, with data validation and responses in JSON format.",
+    proyecto5_titulo:"Inventory Management System-ASP.NET",
+    proyecto5_desc:"Web-based Inventory Management System developed using ASP.NET Core MVC 8, C#, and SQL Server, designed for enterprise environments.Features role-based authentication and authorization, transactional inventory control (stock in/out), and real-time dynamic reporting.Includes an administrative dashboard with key metrics, charts, and low-stock alerts.Implements MVC architecture best practices, security measures, and data validation using Entity Framework Core.Responsive UI built with Bootstrap, focused on usability, scalability, and clean code.",
 
-    proyecto6_titulo: "Administrative Documents Automation System",
-    proyecto6_desc: "Desktop application developed in Python (PyQt5) for administrative document processing and management. The system allows extracting relevant information from Word files and generating structured drafts through integration with artificial intelligence APIs. Includes multi-entity management, data validation, persistent storage and Excel report export. <br> Developed during a professional internship at the XperttaLegal law firm, due to confidentiality I cannot go into details of the project but it is backed by a certificate issued by the company.",
 
-    proyecto7_titulo: "Automated Monitoring and Analysis System for Judicial Publications",
-    proyecto7_desc: "System developed in Python for extraction, processing and analysis of public information from official sources. Automates daily collection of publications, integrates external data through APIs, applies AI-assisted analysis for classification of relevant records and generates structured reports in Excel. The solution was designed to run on a scheduled basis on cloud run infrastructure (Google Cloud), ensuring continuous and scalable operation <br> Developed during a professional internship at the XperttaLegal law firm, supported by certification issued by the company.",
+    proyecto6_titulo: "tse-costa-rica-api",
+    proyecto6_desc: "REST API developed with FastAPI to query information from the Costa Rican Civil Registry, using public data provided by the Supreme Electoral Court (TSE). The API allows efficient queries by ID number or full name, with data validation and responses in JSON format.",
+
+    proyecto7_titulo: "Administrative Documents Automation System",
+    proyecto7_desc: "Desktop application developed in Python (PyQt5) for administrative document processing and management. The system allows extracting relevant information from Word files and generating structured drafts through integration with artificial intelligence APIs. Includes multi-entity management, data validation, persistent storage and Excel report export. <br> Developed during a professional internship at the XperttaLegal law firm, due to confidentiality I cannot go into details of the project but it is backed by a certificate issued by the company.",
+
+    proyecto8_titulo: "Automated Monitoring and Analysis System for Judicial Publications",
+    proyecto8_desc: "System developed in Python for extraction, processing and analysis of public information from official sources. Automates daily collection of publications, integrates external data through APIs, applies AI-assisted analysis for classification of relevant records and generates structured reports in Excel. The solution was designed to run on a scheduled basis on cloud run infrastructure (Google Cloud), ensuring continuous and scalable operation <br> Developed during a professional internship at the XperttaLegal law firm, supported by certification issued by the company.",
 
     // Contacto
     titulo_contacto: "Contact",
@@ -392,7 +399,8 @@ function cambiarIdioma(idioma) {
       { titulo: t.proyecto4_titulo, desc: t.proyecto4_desc },
       { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc },
       { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc },
-      { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc }
+      { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc },
+      { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc }
     ];
     
     proyectos.forEach((proyecto, index) => {
