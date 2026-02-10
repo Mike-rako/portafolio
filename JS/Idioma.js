@@ -11,7 +11,8 @@ const traducciones = {
 
     // Main - Inicio
     desarrollador: "Desarrollador de software",
-    descripcion_inicio: "Desarrollador Full Stack especializado en Backend <br /> creando soluciones robustas y escalables con código limpio y eficiente",
+    descripcion_inicio:
+      "Desarrollador Full Stack especializado en Backend <br /> creando soluciones robustas y escalables con código limpio y eficiente",
     github_text: "Git Hub",
     linkedin_text: "LinkedIn",
     descargar_cv: "Descargar CV",
@@ -41,16 +42,20 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
     desarrollo_software: "Desarrollo Software",
 
     especialidad_backend_titulo: "Desarrollo Backend",
-    especialidad_backend_desc: "Diseño e implementación de APIs RESTful con Python y C#, gestión de bases de datos relacionales, optimización de consultas y arquitectura de servidores Linux.",
+    especialidad_backend_desc:
+      "Diseño e implementación de APIs RESTful con Python y C#, gestión de bases de datos relacionales, optimización de consultas y arquitectura de servidores Linux.",
 
     especialidad_db_titulo: "Bases de Datos",
-    especialidad_db_desc: "Diseño, normalización e implementación de bases de datos relacionales con SQL Server y MySQL. Optimización de consultas y modelado eficiente de datos.",
+    especialidad_db_desc:
+      "Diseño, normalización e implementación de bases de datos relacionales con SQL Server y MySQL. Optimización de consultas y modelado eficiente de datos.",
 
     especialidad_web_titulo: "Desarrollo Web",
-    especialidad_web_desc: "Creación de interfaces responsive con HTML5, CSS3 y JavaScript. Desarrollo de aplicaciones web dinámicas e interactivas con enfoque en UX/UI.",
+    especialidad_web_desc:
+      "Creación de interfaces responsive con HTML5, CSS3 y JavaScript. Desarrollo de aplicaciones web dinámicas e interactivas con enfoque en UX/UI.",
 
     especialidad_software_titulo: "Desarrollo de Software",
-    especialidad_software_desc: "Análisis de requisitos, diseño de arquitecturas escalables y desarrollo de aplicaciones empresariales con metodologías ágiles y buenas prácticas de código.",
+    especialidad_software_desc:
+      "Análisis de requisitos, diseño de arquitecturas escalables y desarrollo de aplicaciones empresariales con metodologías ágiles y buenas prácticas de código.",
 
     // Lenguajes de programación
     titulo_lenguajes: "Lenguajes de Programación",
@@ -62,28 +67,37 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
     cerrar: "Cerrar",
 
     proyecto1_titulo: "Portafolio",
-    proyecto1_desc: "Es el portafolio en el ahora mismo te necuentras, fue desarrollado para presentar mis proyectos, habilidades y conocimientos en desarrollo de aplicaciones. Está diseñado como una plataforma personal donde muestro mi trabajo, organizo mis proyectos y aplico buenas prácticas de diseño, estructura y experiencia",
+    proyecto1_desc:
+      "Es el portafolio en el ahora mismo te necuentras, fue desarrollado para presentar mis proyectos, habilidades y conocimientos en desarrollo de aplicaciones. Está diseñado como una plataforma personal donde muestro mi trabajo, organizo mis proyectos y aplico buenas prácticas de diseño, estructura y experiencia",
 
     proyecto2_titulo: "Auto clicker",
-    proyecto2_desc: "Una aplicación de escritorio con interfaz gráfica para automatizar clicks del mouse en Windows. Ideal para tareas repetitivas que requieren clicks constantes en posiciones específicas de la pantalla.",
+    proyecto2_desc:
+      "Una aplicación de escritorio con interfaz gráfica para automatizar clicks del mouse en Windows. Ideal para tareas repetitivas que requieren clicks constantes en posiciones específicas de la pantalla.",
 
     proyecto3_titulo: "sistema-heladeria",
-    proyecto3_desc: "Aplicación de escritorio hecha con fines educativos para gestionar pedidos de una heladería con interfaz gráfica. Permite crear órdenes personalizadas de helados con diferentes sabores, toppings y tipos, calculando automáticamente precios con impuestos y descuentos.",
+    proyecto3_desc:
+      "Aplicación de escritorio hecha con fines educativos para gestionar pedidos de una heladería con interfaz gráfica. Permite crear órdenes personalizadas de helados con diferentes sabores, toppings y tipos, calculando automáticamente precios con impuestos y descuentos.",
 
     proyecto4_titulo: "Pagina web de Tienda musical",
-    proyecto4_desc: "Página web desarrollada como proyecto académico, que incluye un catálogo de productos de prueba y un carrito de compras funcional, con visualización de productos seleccionados y cálculo automático del subtotal",
+    proyecto4_desc:
+      "Página web desarrollada como proyecto académico, que incluye un catálogo de productos de prueba y un carrito de compras funcional, con visualización de productos seleccionados y cálculo automático del subtotal",
 
-    proyecto5_titulo:"Sistema-de-Gestion-de-Inventario-ASP.NET",
-    proyecto5_desc:"Sistema de Gestión de Inventario Web desarrollado con ASP.NET Core MVC 8, C# y SQL Server, orientado a entornos empresariales. Implementa autenticación y autorización por roles, control transaccional de inventario (entradas y salidas) y reportería dinámica en tiempo real.Incluye dashboard administrativo con métricas, gráficas y alertas de stock bajo.Aplica buenas prácticas de arquitectura MVC, seguridad, validación de datos y Entity Framework Core.Diseño responsive con Bootstrap y enfoque en usabilidad y mantenibilidad del código.",
+    proyecto5_titulo: "Sistema-de-Gestion-de-Inventario-ASP.NET",
+    proyecto5_desc:
+      "Sistema de Gestión de Inventario Web desarrollado con ASP.NET Core MVC 8, C# y SQL Server, orientado a entornos empresariales. Implementa autenticación y autorización por roles, control transaccional de inventario (entradas y salidas) y reportería dinámica en tiempo real.Incluye dashboard administrativo con métricas, gráficas y alertas de stock bajo.Aplica buenas prácticas de arquitectura MVC, seguridad, validación de datos y Entity Framework Core.Diseño responsive con Bootstrap y enfoque en usabilidad y mantenibilidad del código.",
 
     proyecto6_titulo: "tse-costa-rica-api",
-    proyecto6_desc: "API REST desarrollada con FastAPI para consultar información del Registro Civil de Costa Rica, utilizando datos públicos proporcionados por el Tribunal Supremo de Elecciones (TSE). La API permite realizar consultas eficientes por número de cédula o por nombre completo, con validación de datos y respuestas en formato JSON.",
+    proyecto6_desc:
+      "API REST desarrollada con FastAPI para consultar información del Registro Civil de Costa Rica, utilizando datos públicos proporcionados por el Tribunal Supremo de Elecciones (TSE). La API permite realizar consultas eficientes por número de cédula o por nombre completo, con validación de datos y respuestas en formato JSON.",
 
     proyecto7_titulo: "Sistema de Automatización de Documentos Administrativos",
-    proyecto7_desc: "Aplicación de escritorio desarrollada en Python (PyQt5) para el procesamiento y gestión de documentos administrativos. El sistema permite extraer información relevante desde archivos Word y generar borradores estructurados mediante integración con APIs de inteligencia artificial. Incluye gestión multi-entidad, validación de datos, almacenamiento persistente y exportación de reportes en Excel. <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, por confidencialidad no puedo entrar en detalles del proyecto pero esta respaldado por un certificado emitido por la empresa.",
+    proyecto7_desc:
+      "Aplicación de escritorio desarrollada en Python (PyQt5) para el procesamiento y gestión de documentos administrativos. El sistema permite extraer información relevante desde archivos Word y generar borradores estructurados mediante integración con APIs de inteligencia artificial. Incluye gestión multi-entidad, validación de datos, almacenamiento persistente y exportación de reportes en Excel. <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, por confidencialidad no puedo entrar en detalles del proyecto pero esta respaldado por un certificado emitido por la empresa.",
 
-    proyecto8_titulo: "Sistema Automatizado de Monitoreo y Análisis de Publicaciones Judiciales",
-    proyecto8_desc: "Sistema desarrollado en Python para la extracción, procesamiento y análisis de información pública proveniente de fuentes oficiales. Automatiza la recolección diaria de publicaciones, integra datos externos mediante APIs, aplica análisis asistido por inteligencia artificial para clasificación de registros relevantes y genera reportes estructurados en Excel. La solución fue diseñada para ejecutarse de forma programada en infraestructura cloud run (Google Cloud), garantizando operación continua y escalable <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, respaldado por certificación emitida por la empresa.",
+    proyecto8_titulo:
+      "Sistema Automatizado de Monitoreo y Análisis de Publicaciones Judiciales",
+    proyecto8_desc:
+      "Sistema desarrollado en Python para la extracción, procesamiento y análisis de información pública proveniente de fuentes oficiales. Automatiza la recolección diaria de publicaciones, integra datos externos mediante APIs, aplica análisis asistido por inteligencia artificial para clasificación de registros relevantes y genera reportes estructurados en Excel. La solución fue diseñada para ejecutarse de forma programada en infraestructura cloud run (Google Cloud), garantizando operación continua y escalable <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, respaldado por certificación emitida por la empresa.",
 
     // Contacto
     titulo_contacto: "Contacto",
@@ -103,13 +117,14 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
     ver_perfil: "Ver mi perfil",
 
     // Footer
-    footer_descripcion: "Desarrollador Full Stack especializado en Backend creando soluciones robustas y escalables con código limpio y eficiente",
+    footer_descripcion:
+      "Desarrollador Full Stack especializado en Backend creando soluciones robustas y escalables con código limpio y eficiente",
     footer_navegacion: "Navegación",
     footer_contacto_titulo: "Contacto",
     footer_disponible: "Disponible en Git Hub y LinkedIn",
     footer_ubicacion: "Costa Rica, San José",
     trabajemos_juntos: "Trabajemos juntos",
-    derechos: "&copy;2025 Michael Barillas Nuñez - Portafolio"
+    derechos: "&copy;2025 Michael Barillas Nuñez - Portafolio",
   },
   en: {
     // Header
@@ -122,7 +137,8 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
 
     // Main - Inicio
     desarrollador: "Software Developer",
-    descripcion_inicio: "Full Stack Developer specialized in Backend <br /> creating robust and scalable solutions with clean and efficient code",
+    descripcion_inicio:
+      "Full Stack Developer specialized in Backend <br /> creating robust and scalable solutions with clean and efficient code",
     github_text: "Git Hub",
     linkedin_text: "LinkedIn",
     descargar_cv: "Download CV",
@@ -152,16 +168,20 @@ I bring not only solid technical skills, but also teamwork ability, effective co
     desarrollo_software: "Software Development",
 
     especialidad_backend_titulo: "Backend Development",
-    especialidad_backend_desc: "Design and implementation of RESTful APIs with Python and C#, relational database management, query optimization and Linux server architecture.",
+    especialidad_backend_desc:
+      "Design and implementation of RESTful APIs with Python and C#, relational database management, query optimization and Linux server architecture.",
 
     especialidad_db_titulo: "Databases",
-    especialidad_db_desc: "Design, normalization and implementation of relational databases with SQL Server and MySQL. Query optimization and efficient data modeling.",
+    especialidad_db_desc:
+      "Design, normalization and implementation of relational databases with SQL Server and MySQL. Query optimization and efficient data modeling.",
 
     especialidad_web_titulo: "Web Development",
-    especialidad_web_desc: "Creation of responsive interfaces with HTML5, CSS3 and JavaScript. Development of dynamic and interactive web applications with focus on UX/UI.",
+    especialidad_web_desc:
+      "Creation of responsive interfaces with HTML5, CSS3 and JavaScript. Development of dynamic and interactive web applications with focus on UX/UI.",
 
     especialidad_software_titulo: "Software Development",
-    especialidad_software_desc: "Requirements analysis, scalable architecture design and enterprise application development with agile methodologies and code best practices.",
+    especialidad_software_desc:
+      "Requirements analysis, scalable architecture design and enterprise application development with agile methodologies and code best practices.",
 
     // Lenguajes de programación
     titulo_lenguajes: "Programming Languages",
@@ -173,29 +193,37 @@ I bring not only solid technical skills, but also teamwork ability, effective co
     cerrar: "Close",
 
     proyecto1_titulo: "Portafolio",
-    proyecto1_desc: "This is the portfolio you are currently viewing, developed to present my projects, skills and knowledge in application development. It is designed as a personal platform where I showcase my work, organize my projects and apply good practices in design, structure and experience",
+    proyecto1_desc:
+      "This is the portfolio you are currently viewing, developed to present my projects, skills and knowledge in application development. It is designed as a personal platform where I showcase my work, organize my projects and apply good practices in design, structure and experience",
 
     proyecto2_titulo: "Auto clicker",
-    proyecto2_desc: "A desktop application with graphical interface to automate mouse clicks on Windows. Ideal for repetitive tasks that require constant clicks at specific positions on the screen.",
+    proyecto2_desc:
+      "A desktop application with graphical interface to automate mouse clicks on Windows. Ideal for repetitive tasks that require constant clicks at specific positions on the screen.",
 
     proyecto3_titulo: "ice-cream-shop-system",
-    proyecto3_desc: "Desktop application made for educational purposes to manage ice cream shop orders with graphical interface. Allows creating custom ice cream orders with different flavors, toppings and types, automatically calculating prices with taxes and discounts.",
+    proyecto3_desc:
+      "Desktop application made for educational purposes to manage ice cream shop orders with graphical interface. Allows creating custom ice cream orders with different flavors, toppings and types, automatically calculating prices with taxes and discounts.",
 
     proyecto4_titulo: "Music Store Web Page",
-    proyecto4_desc: "Web page developed as an academic project, which includes a test product catalog and a functional shopping cart, with visualization of selected products and automatic subtotal calculation",
+    proyecto4_desc:
+      "Web page developed as an academic project, which includes a test product catalog and a functional shopping cart, with visualization of selected products and automatic subtotal calculation",
 
-    proyecto5_titulo:"Inventory Management System-ASP.NET",
-    proyecto5_desc:"Web-based Inventory Management System developed using ASP.NET Core MVC 8, C#, and SQL Server, designed for enterprise environments.Features role-based authentication and authorization, transactional inventory control (stock in/out), and real-time dynamic reporting.Includes an administrative dashboard with key metrics, charts, and low-stock alerts.Implements MVC architecture best practices, security measures, and data validation using Entity Framework Core.Responsive UI built with Bootstrap, focused on usability, scalability, and clean code.",
-
+    proyecto5_titulo: "Inventory Management System-ASP.NET",
+    proyecto5_desc:
+      "Web-based Inventory Management System developed using ASP.NET Core MVC 8, C#, and SQL Server, designed for enterprise environments.Features role-based authentication and authorization, transactional inventory control (stock in/out), and real-time dynamic reporting.Includes an administrative dashboard with key metrics, charts, and low-stock alerts.Implements MVC architecture best practices, security measures, and data validation using Entity Framework Core.Responsive UI built with Bootstrap, focused on usability, scalability, and clean code.",
 
     proyecto6_titulo: "tse-costa-rica-api",
-    proyecto6_desc: "REST API developed with FastAPI to query information from the Costa Rican Civil Registry, using public data provided by the Supreme Electoral Court (TSE). The API allows efficient queries by ID number or full name, with data validation and responses in JSON format.",
+    proyecto6_desc:
+      "REST API developed with FastAPI to query information from the Costa Rican Civil Registry, using public data provided by the Supreme Electoral Court (TSE). The API allows efficient queries by ID number or full name, with data validation and responses in JSON format.",
 
     proyecto7_titulo: "Administrative Documents Automation System",
-    proyecto7_desc: "Desktop application developed in Python (PyQt5) for administrative document processing and management. The system allows extracting relevant information from Word files and generating structured drafts through integration with artificial intelligence APIs. Includes multi-entity management, data validation, persistent storage and Excel report export. <br> Developed during a professional internship at the XperttaLegal law firm, due to confidentiality I cannot go into details of the project but it is backed by a certificate issued by the company.",
+    proyecto7_desc:
+      "Desktop application developed in Python (PyQt5) for administrative document processing and management. The system allows extracting relevant information from Word files and generating structured drafts through integration with artificial intelligence APIs. Includes multi-entity management, data validation, persistent storage and Excel report export. <br> Developed during a professional internship at the XperttaLegal law firm, due to confidentiality I cannot go into details of the project but it is backed by a certificate issued by the company.",
 
-    proyecto8_titulo: "Automated Monitoring and Analysis System for Judicial Publications",
-    proyecto8_desc: "System developed in Python for extraction, processing and analysis of public information from official sources. Automates daily collection of publications, integrates external data through APIs, applies AI-assisted analysis for classification of relevant records and generates structured reports in Excel. The solution was designed to run on a scheduled basis on cloud run infrastructure (Google Cloud), ensuring continuous and scalable operation <br> Developed during a professional internship at the XperttaLegal law firm, supported by certification issued by the company.",
+    proyecto8_titulo:
+      "Automated Monitoring and Analysis System for Judicial Publications",
+    proyecto8_desc:
+      "System developed in Python for extraction, processing and analysis of public information from official sources. Automates daily collection of publications, integrates external data through APIs, applies AI-assisted analysis for classification of relevant records and generates structured reports in Excel. The solution was designed to run on a scheduled basis on cloud run infrastructure (Google Cloud), ensuring continuous and scalable operation <br> Developed during a professional internship at the XperttaLegal law firm, supported by certification issued by the company.",
 
     // Contacto
     titulo_contacto: "Contact",
@@ -215,23 +243,25 @@ I bring not only solid technical skills, but also teamwork ability, effective co
     ver_perfil: "View my profile",
 
     // Footer
-    footer_descripcion: "Full Stack Developer specialized in Backend creating robust and scalable solutions with clean and efficient code",
+    footer_descripcion:
+      "Full Stack Developer specialized in Backend creating robust and scalable solutions with clean and efficient code",
     footer_navegacion: "Navigation",
     footer_contacto_titulo: "Contact",
     footer_disponible: "Available on Git Hub and LinkedIn",
     footer_ubicacion: "Costa Rica, San José",
     trabajemos_juntos: "Let's work together",
-    derechos: "&copy;2025 Michael Barillas Nuñez - Portfolio"
-  }
+    derechos: "&copy;2025 Michael Barillas Nuñez - Portfolio",
+  },
 };
 
 // Función para cambiar el idioma
 function cambiarIdioma(idioma) {
+  console.log(document.getElementById("CV_Sobre_mi").getAttribute("href"));
   const t = traducciones[idioma];
 
   try {
     // Header - navegación principal
-    const navLinks = document.querySelectorAll('header > nav > a');
+    const navLinks = document.querySelectorAll("header > nav > a");
     if (navLinks.length >= 5) {
       navLinks[0].textContent = t.nav_inicio;
       navLinks[1].textContent = t.nav_sobre_mi;
@@ -239,9 +269,9 @@ function cambiarIdioma(idioma) {
       navLinks[3].textContent = t.nav_proyectos;
       navLinks[4].textContent = t.nav_contacto;
     }
-    
+
     // Menu móvil
-    const menuLinks = document.querySelectorAll('#menu > a');
+    const menuLinks = document.querySelectorAll("#menu > a");
     if (menuLinks.length >= 5) {
       menuLinks[0].textContent = t.nav_inicio;
       menuLinks[1].textContent = t.nav_sobre_mi;
@@ -249,23 +279,23 @@ function cambiarIdioma(idioma) {
       menuLinks[3].textContent = t.nav_proyectos;
       menuLinks[4].textContent = t.nav_contacto;
     }
-    
-    const portafolioTitle = document.querySelector('header div h3');
+
+    const portafolioTitle = document.querySelector("header div h3");
     if (portafolioTitle) portafolioTitle.textContent = t.portafolio;
 
     // Main - Inicio
-    const mainH3 = document.querySelector('main h3');
+    const mainH3 = document.querySelector("main h3");
     if (mainH3) mainH3.textContent = t.desarrollador;
-    
-    const mainH4 = document.querySelector('main h4');
+
+    const mainH4 = document.querySelector("main h4");
     if (mainH4) mainH4.innerHTML = t.descripcion_inicio;
-    
+
     // Botones del inicio - usar querySelectorAll más específico
-    const mainBotones = document.querySelectorAll('main > div:last-child a');
+    const mainBotones = document.querySelectorAll("main > div:last-child a");
     if (mainBotones.length >= 3) {
       // Botón GitHub/LinkedIn (pueden variar según la versión)
       const githubBtn = mainBotones[0];
-      if (githubBtn && githubBtn.href.includes('github')) {
+      if (githubBtn && githubBtn.href.includes("github")) {
         const githubText = githubBtn.childNodes;
         for (let node of githubText) {
           if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
@@ -274,9 +304,11 @@ function cambiarIdioma(idioma) {
           }
         }
       }
-      
+
       // Botón LinkedIn (si existe)
-      const linkedinBtn = Array.from(mainBotones).find(btn => btn.href && btn.href.includes('linkedin'));
+      const linkedinBtn = Array.from(mainBotones).find(
+        (btn) => btn.href && btn.href.includes("linkedin"),
+      );
       if (linkedinBtn) {
         const linkedinText = linkedinBtn.childNodes;
         for (let node of linkedinText) {
@@ -286,9 +318,9 @@ function cambiarIdioma(idioma) {
           }
         }
       }
-      
+
       // Botón Descargar CV
-      const cvDownloadBtn = document.querySelector('a[download].boton-boing');
+      const cvDownloadBtn = document.querySelector("a[download].boton-boing");
       if (cvDownloadBtn) {
         const cvText = cvDownloadBtn.childNodes;
         for (let node of cvText) {
@@ -298,9 +330,11 @@ function cambiarIdioma(idioma) {
           }
         }
       }
-      
+
       // Botón Ver proyectos
-      const verProyectosBtn = document.querySelector('a[href="#proyectos"]#CV_Proyectos');
+      const verProyectosBtn = document.querySelector(
+        'a[href="#proyectos"]#CV_Proyectos',
+      );
       if (verProyectosBtn) {
         const proyText = verProyectosBtn.childNodes;
         for (let node of proyText) {
@@ -313,14 +347,16 @@ function cambiarIdioma(idioma) {
     }
 
     // Sobre mi
-    const sobreMiTitle = document.querySelector('#Sobre_mi');
+    const sobreMiTitle = document.querySelector("#Sobre_mi");
     if (sobreMiTitle) sobreMiTitle.textContent = t.titulo_sobre_mi;
-    
-    const datosH4 = document.querySelector('#datos h4');
+
+    const datosH4 = document.querySelector("#datos h4");
     if (datosH4) datosH4.innerHTML = t.descripcion_sobre_mi;
 
     // Habilidades blandas
-    const habilidades = document.querySelectorAll('.Habilidades_blandas p:first-child');
+    const habilidades = document.querySelectorAll(
+      ".Habilidades_blandas p:first-child",
+    );
     const habilidadesTextos = [
       t.creatividad,
       t.trabajo_equipo,
@@ -328,9 +364,9 @@ function cambiarIdioma(idioma) {
       t.adaptibilidad,
       t.resolucion_problemas,
       t.proactividad,
-      t.gestion_tiempo
+      t.gestion_tiempo,
     ];
-    
+
     habilidades.forEach((habilidad, index) => {
       if (habilidadesTextos[index]) {
         habilidad.textContent = habilidadesTextos[index];
@@ -338,9 +374,16 @@ function cambiarIdioma(idioma) {
     });
 
     // Especializaciones (barras)
-    const barrasH4 = document.querySelectorAll('#contenedorBarras h4:nth-child(3)');
-    const barrasTextos = [t.backend, t.base_datos, t.desarrollo_web, t.desarrollo_software];
-    
+    const barrasH4 = document.querySelectorAll(
+      "#contenedorBarras h4:nth-child(3)",
+    );
+    const barrasTextos = [
+      t.backend,
+      t.base_datos,
+      t.desarrollo_web,
+      t.desarrollo_software,
+    ];
+
     barrasH4.forEach((barra, index) => {
       if (barrasTextos[index]) {
         barra.textContent = barrasTextos[index];
@@ -348,23 +391,26 @@ function cambiarIdioma(idioma) {
     });
 
     // Tarjetas de especialización
-    const tarjetas = document.querySelectorAll('.tarjetas_especializaciones');
+    const tarjetas = document.querySelectorAll(".tarjetas_especializaciones");
     if (tarjetas.length >= 4) {
-      tarjetas[0].querySelector('h1').textContent = t.especialidad_backend_titulo;
-      tarjetas[0].querySelector('h3').textContent = t.especialidad_backend_desc;
-      
-      tarjetas[1].querySelector('h1').textContent = t.especialidad_db_titulo;
-      tarjetas[1].querySelector('h3').textContent = t.especialidad_db_desc;
-      
-      tarjetas[2].querySelector('h1').textContent = t.especialidad_web_titulo;
-      tarjetas[2].querySelector('h3').textContent = t.especialidad_web_desc;
-      
-      tarjetas[3].querySelector('h1').textContent = t.especialidad_software_titulo;
-      tarjetas[3].querySelector('h3').textContent = t.especialidad_software_desc;
+      tarjetas[0].querySelector("h1").textContent =
+        t.especialidad_backend_titulo;
+      tarjetas[0].querySelector("h3").textContent = t.especialidad_backend_desc;
+
+      tarjetas[1].querySelector("h1").textContent = t.especialidad_db_titulo;
+      tarjetas[1].querySelector("h3").textContent = t.especialidad_db_desc;
+
+      tarjetas[2].querySelector("h1").textContent = t.especialidad_web_titulo;
+      tarjetas[2].querySelector("h3").textContent = t.especialidad_web_desc;
+
+      tarjetas[3].querySelector("h1").textContent =
+        t.especialidad_software_titulo;
+      tarjetas[3].querySelector("h3").textContent =
+        t.especialidad_software_desc;
     }
 
     // Botón CV Sobre mi
-    const cvSobreMi = document.querySelector('#CV_Sobre_mi');
+    const cvSobreMi = document.querySelector("#CV_Sobre_mi");
     if (cvSobreMi) {
       const cvSobreMiText = cvSobreMi.childNodes;
       for (let node of cvSobreMiText) {
@@ -376,22 +422,25 @@ function cambiarIdioma(idioma) {
     }
 
     // Lenguajes de programación
-    const tituloLenguajes = document.querySelector('#tituloLenguajes');
+    const tituloLenguajes = document.querySelector("#tituloLenguajes");
     if (tituloLenguajes) tituloLenguajes.textContent = t.titulo_lenguajes;
-    
+
     // Herramientas - buscar el h1 que contiene "Herramientas"
-    const allH1 = document.querySelectorAll('h1');
-    allH1.forEach(h1 => {
-      if (h1.textContent.includes('Herramientas') || h1.textContent.includes('Tools')) {
+    const allH1 = document.querySelectorAll("h1");
+    allH1.forEach((h1) => {
+      if (
+        h1.textContent.includes("Herramientas") ||
+        h1.textContent.includes("Tools")
+      ) {
         h1.textContent = t.herramientas;
       }
     });
 
     // Proyectos
-    const proyectosTitle = document.querySelector('#proyectos');
+    const proyectosTitle = document.querySelector("#proyectos");
     if (proyectosTitle) proyectosTitle.textContent = t.titulo_proyectos;
-    
-    const proyectos = document.querySelectorAll('.Proyectos');
+
+    const proyectos = document.querySelectorAll(".Proyectos");
     const proyectosData = [
       { titulo: t.proyecto1_titulo, desc: t.proyecto1_desc },
       { titulo: t.proyecto2_titulo, desc: t.proyecto2_desc },
@@ -400,90 +449,112 @@ function cambiarIdioma(idioma) {
       { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc },
       { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc },
       { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc },
-      { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc }
+      { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc },
     ];
-    
+
     proyectos.forEach((proyecto, index) => {
       if (proyectosData[index]) {
-        const h4 = proyecto.querySelector('h4');
-        const p = proyecto.querySelector('p:first-of-type, p.limitado');
-        
+        const h4 = proyecto.querySelector("h4");
+        const p = proyecto.querySelector("p:first-of-type, p.limitado");
+
         if (h4) h4.textContent = proyectosData[index].titulo;
         if (p) p.innerHTML = proyectosData[index].desc;
       }
     });
 
     // Botones de proyectos
-    document.querySelectorAll('.boton_proyecto').forEach(boton => {
+    document.querySelectorAll(".boton_proyecto").forEach((boton) => {
       boton.textContent = t.ver_codigo;
     });
-    
-    document.querySelectorAll('.cerrar_proyecto').forEach(boton => {
+
+    document.querySelectorAll(".cerrar_proyecto").forEach((boton) => {
       boton.textContent = t.cerrar;
     });
 
     // Contacto
-    const contactoTitle = document.querySelector('#Contacto');
+    const contactoTitle = document.querySelector("#Contacto");
     if (contactoTitle) contactoTitle.textContent = t.titulo_contacto;
-    
-    const correoH1 = document.querySelector('#correo h1');
+
+    const correoH1 = document.querySelector("#correo h1");
     if (correoH1) correoH1.textContent = t.correo;
-    
-    const formLabels = document.querySelectorAll('#correo form h4');
+
+    const formLabels = document.querySelectorAll("#correo form h4");
     if (formLabels.length >= 3) {
       formLabels[0].textContent = t.nombre;
       formLabels[1].textContent = t.email;
       formLabels[2].textContent = t.mensaje;
     }
-    
+
     const inputName = document.querySelector('input[name="name"]');
     if (inputName) inputName.placeholder = t.tu_nombre;
-    
+
     const inputEmail = document.querySelector('input[name="email"]');
     if (inputEmail) inputEmail.placeholder = t.tu_correo;
-    
+
     const textarea = document.querySelector('textarea[name="message"]');
     if (textarea) textarea.placeholder = t.tu_mensaje;
-    
+
     const submitBtn = document.querySelector('#correo button[type="submit"]');
     if (submitBtn) submitBtn.textContent = t.enviar_mensaje;
-    
-    const ubicacionP = document.querySelector('#correo p:last-child');
+
+    const ubicacionP = document.querySelector("#correo p:last-child");
     if (ubicacionP) ubicacionP.textContent = t.ubicacion;
 
     // Tarjetas de contacto
-    const tarjetasContacto = document.querySelectorAll('.contenedor_contacto > div:last-child > div');
+    const tarjetasContacto = document.querySelectorAll(
+      ".contenedor_contacto > div:last-child > div",
+    );
     if (tarjetasContacto.length >= 2) {
       const githubCard = tarjetasContacto[0];
       const linkedinCard = tarjetasContacto[1];
-      
+
       if (githubCard) {
-        const gh1 = githubCard.querySelector('h1');
-        const gp = githubCard.querySelector('p');
-        const ga = githubCard.querySelector('a');
+        const gh1 = githubCard.querySelector("h1");
+        const gp = githubCard.querySelector("p");
+        const ga = githubCard.querySelector("a");
         if (gh1) gh1.textContent = t.github_titulo;
         if (gp) gp.textContent = t.github_desc;
         if (ga) ga.textContent = t.ver_perfil;
       }
-      
+
       if (linkedinCard) {
-        const lh1 = linkedinCard.querySelector('h1');
-        const lp = linkedinCard.querySelector('p');
-        const la = linkedinCard.querySelector('a');
+        const lh1 = linkedinCard.querySelector("h1");
+        const lp = linkedinCard.querySelector("p");
+        const la = linkedinCard.querySelector("a");
         if (lh1) lh1.textContent = t.linkedin_titulo;
         if (lp) lp.textContent = t.linkedin_desc;
         if (la) la.textContent = t.ver_perfil;
       }
     }
 
+    // Actualizar enlaces de CV según idioma
+    const cvPath =
+      idioma === "es"
+        ? "media/CV Michael Barillas Nuñez ES.pdf"
+        : "media/CV Michael Barillas Nuñez EN.pdf";
+
+    // Botón de CV en la sección de inicio
+    const cvInicio = document.querySelector(
+      'main a[download][id="CV_Proyectos"]',
+    );
+    if (cvInicio) {
+      cvInicio.setAttribute("href", cvPath);
+    }
+
+    // Botón de CV en la sección sobre mi
+    const cvSobreMi2 = document.getElementById("CV_Sobre_mi");
+    if (cvSobreMi2) {
+      cvSobreMi2.setAttribute("href", cvPath);
+    }
+
     // Footer
-    const footerP = document.querySelector('.footer_Portafolio p');
+    const footerP = document.querySelector(".footer_Portafolio p");
     if (footerP) footerP.textContent = t.footer_descripcion;
-    
-    const navFooterH2 = document.querySelector('.footer_navegacion h2');
+
+    const navFooterH2 = document.querySelector(".footer_navegacion h2");
     if (navFooterH2) navFooterH2.textContent = t.footer_navegacion;
-    
-    const navFooter = document.querySelectorAll('.footer_navegacion a');
+
+    const navFooter = document.querySelectorAll(".footer_navegacion a");
     if (navFooter.length >= 5) {
       navFooter[0].textContent = t.nav_inicio;
       navFooter[1].textContent = t.nav_sobre_mi;
@@ -491,13 +562,13 @@ function cambiarIdioma(idioma) {
       navFooter[3].textContent = t.nav_proyectos;
       navFooter[4].textContent = t.nav_contacto;
     }
-    
-    const footerContacto = document.querySelector('.footer_Contacto');
+
+    const footerContacto = document.querySelector(".footer_Contacto");
     if (footerContacto) {
-      const fch2 = footerContacto.querySelector('h2');
-      const fcp = footerContacto.querySelectorAll('p');
-      const fca = footerContacto.querySelector('a');
-      
+      const fch2 = footerContacto.querySelector("h2");
+      const fcp = footerContacto.querySelectorAll("p");
+      const fca = footerContacto.querySelector("a");
+
       if (fch2) fch2.textContent = t.footer_contacto_titulo;
       if (fcp.length >= 2) {
         fcp[0].textContent = t.footer_disponible;
@@ -505,53 +576,48 @@ function cambiarIdioma(idioma) {
       }
       if (fca) fca.textContent = t.trabajemos_juntos;
     }
-    
-    const footerCopy = document.querySelector('footer > div:last-child h4');
+
+    const footerCopy = document.querySelector("footer > div:last-child h4");
     if (footerCopy) footerCopy.innerHTML = t.derechos;
 
     // Guardar preferencia
-    localStorage.setItem('idioma', idioma);
-    
-    console.log('Idioma cambiado a:', idioma);
+    localStorage.setItem("idioma", idioma);
   } catch (error) {
-    console.error('Error al cambiar idioma:', error);
+    console.error("Error al cambiar idioma:", error);
   }
 }
 
 // Detectar idioma del navegador
 function detectarIdioma() {
-  const idiomaGuardado = localStorage.getItem('idioma');
+  const idiomaGuardado = localStorage.getItem("idioma");
   if (idiomaGuardado) {
     return idiomaGuardado;
   }
-  
+
   const idiomaNavegador = navigator.language || navigator.userLanguage;
-  return idiomaNavegador.startsWith('es') ? 'es' : 'en';
+  return idiomaNavegador.startsWith("es") ? "es" : "en";
 }
 
 // Inicialización
-window.addEventListener('DOMContentLoaded', () => {
-  const btnIdioma = document.getElementById('btn-idioma');
-  
+window.addEventListener("DOMContentLoaded", () => {
+  const btnIdioma = document.getElementById("btn-idioma");
+
   if (!btnIdioma) {
-    console.error('No se encontró el botón de idioma. Asegúrate de que existe un elemento con id="btn-idioma"');
     return;
   }
-  
+
   const idiomaActual = detectarIdioma();
-  
+
   // Aplicar idioma inicial
   cambiarIdioma(idiomaActual);
-  
+
   // Actualizar texto del botón
-  btnIdioma.textContent = idiomaActual === 'es' ? 'EN' : 'ES';
-  
+  btnIdioma.textContent = idiomaActual === "es" ? "EN" : "ES";
+
   // Toggle entre idiomas
-  btnIdioma.addEventListener('click', () => {
-    const nuevoIdioma = btnIdioma.textContent === 'EN' ? 'en' : 'es';
+  btnIdioma.addEventListener("click", () => {
+    const nuevoIdioma = btnIdioma.textContent === "EN" ? "en" : "es";
     cambiarIdioma(nuevoIdioma);
-    btnIdioma.textContent = nuevoIdioma === 'es' ? 'EN' : 'ES';
+    btnIdioma.textContent = nuevoIdioma === "es" ? "EN" : "ES";
   });
-  
-  console.log('Sistema de idiomas inicializado');
 });
