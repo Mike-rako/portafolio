@@ -1,8 +1,17 @@
+/* ============================================================
+   Lenguajes.css — Sección de lenguajes y herramientas
+   
+   Las barras de lenguajes se animan al hacer hover en la card:
+   parten de width: 0 y se expanden hasta su valor definido.
+   El efecto shimmer es un brillo que corre sobre la barra.
+   ============================================================ */
+
 #tituloLenguajes {
     text-align: center;
     padding: 35px;
 }
 
+/* Grid responsivo de cards de lenguajes */
 #contenedorLenguajes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -10,6 +19,7 @@
     gap: 25px;
 }
 
+/* Card de lenguaje */
 .BarrasLenguajes {
     display: flex;
     padding: 25px 60px;
@@ -23,21 +33,17 @@
     overflow: hidden;
 }
 
+/* Gradiente sutil que se activa en hover */
 .BarrasLenguajes::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     background: linear-gradient(135deg, rgba(204, 32, 85, 0.05), transparent);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.BarrasLenguajes:hover::before {
-    opacity: 1;
-}
+.BarrasLenguajes:hover::before { opacity: 1; }
 
 .BarrasLenguajes:hover {
     transform: translateY(-5px);
@@ -53,6 +59,7 @@
     z-index: 1;
 }
 
+/* Contenedor de la barra de progreso */
 #Barra_Completa_Lenguajes {
     height: 8px;
     background-color: var(--color-border);
@@ -71,80 +78,77 @@
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
+/* Efecto shimmer: brillo que recorre la barra de izquierda a derecha */
 #Barra_Completa_Lenguajes > div::after {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 0; 
+    right: 0; 
     bottom: 0;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
 }
+
+/* --- Barras por lenguaje ---
+   Parten de width: 0 y se expanden en hover de la card.
+   El color de cada barra coincide con el color oficial del lenguaje. */
 
 #Barra_actual_Python {
-    background: linear-gradient(90deg, #306998, #4B8BBE);
-    width: 0;
+    background: linear-gradient(90deg, #306998, #4B8BBE); width: 0; 
+}
+.BarrasLenguajes:hover #Barra_actual_Python  {
+    width: 100%;
 }
 
-.BarrasLenguajes:hover #Barra_actual_Python {
-    width: 95%;
+
+#Barra_actual_Csharp { 
+    background: linear-gradient(90deg, #512BD4, #7B4FD8); width: 0; 
+}
+.BarrasLenguajes:hover #Barra_actual_Csharp  { 
+    width: 80%; 
 }
 
-#Barra_actual_Csharp {
-    background: linear-gradient(90deg, #512BD4, #7B4FD8);
-    width: 0;
-}
 
-.BarrasLenguajes:hover #Barra_actual_Csharp {
-    width: 70%;
+#Barra_actual_Java { 
+    background: linear-gradient(90deg, #EA2D2E, #F47B20); width: 0; 
 }
-
-#Barra_actual_Java {
-    background: linear-gradient(90deg, #EA2D2E, #F47B20);
-    width: 0;
-}
-
-.BarrasLenguajes:hover #Barra_actual_Java {
+.BarrasLenguajes:hover #Barra_actual_Java    { 
     width: 50%;
 }
 
-#Barra_actual_HTML {
-    background: linear-gradient(90deg, #E44D26, #F16529);
-    width: 0;
+
+#Barra_actual_HTML { 
+    background: linear-gradient(90deg, #E44D26, #F16529); width: 0; 
+}
+.BarrasLenguajes:hover #Barra_actual_HTML    { 
+    width: 100%; 
 }
 
-.BarrasLenguajes:hover #Barra_actual_HTML {
-    width: 85%;
+
+#Barra_actual_CSS { 
+    background: linear-gradient(90deg, #264DE4, #2965F1); width: 0; 
+}
+.BarrasLenguajes:hover #Barra_actual_CSS     { 
+    width: 80%; 
 }
 
-#Barra_actual_CSS {
-    background: linear-gradient(90deg, #264DE4, #2965F1);
-    width: 0;
+
+#Barra_actual_SQL { 
+    background: linear-gradient(90deg, #00758F, #00A4C6); width: 0; 
+}
+.BarrasLenguajes:hover #Barra_actual_SQL { 
+    width: 75%; 
 }
 
-.BarrasLenguajes:hover #Barra_actual_CSS {
-    width: 75%;
-}
-
-#Barra_actual_SQL {
-    background: linear-gradient(90deg, #00758F, #00A4C6);
-    width: 0;
-}
-
-.BarrasLenguajes:hover #Barra_actual_SQL {
-    width: 65%;
-}
-
+/* --- Chips de herramientas --- */
+/* El ::before circular se expande en hover dando un efecto
+   de "relleno" que sale del centro de la card */
 #contenedor_Herramientas {
     display: flex;
     padding: 40px 20px;
@@ -192,6 +196,7 @@
     box-shadow: 0 8px 20px rgba(204, 32, 85, 0.3);
 }
 
+/* El texto queda encima del pseudo-elemento */
 #contenedor_Herramientas div p {
     margin: 0;
     color: var(--color-text);
@@ -200,47 +205,43 @@
     z-index: 1;
 }
 
-@media(max-width: 600px) {
-    #contenedorLenguajes {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 10px;
+/* --- Breakpoints --- */
+
+@media (max-width: 600px) {
+    #contenedorLenguajes { 
+        display: flex; 
+        flex-direction: column; 
+        padding: 20px 10px; 
     }
-    
-    #contenedor_Herramientas {
-        padding: 30px 15px;
-        gap: 12px;
+    #contenedor_Herramientas { 
+        padding: 30px 15px; 
+        gap: 12px; 
     }
-    
-    #contenedor_Herramientas div {
-        padding: 8px 16px;
-        font-size: 14px;
+    #contenedor_Herramientas div { 
+        padding: 8px 16px; 
+        font-size: 14px; 
     }
-    
-    .BarrasLenguajes {
-        padding: 20px;
-        gap: 15px;
-        flex-wrap: wrap;
+    .BarrasLenguajes { 
+        padding: 20px; 
+        gap: 15px; 
+        flex-wrap: wrap; 
     }
-    
     #Barra_Completa_Lenguajes {
-        width: 100%;
-    }
-    
-    .BarrasLenguajes h2 {
-        width: 100%;
-        text-align: center;
+         width: 100%; 
+        }
+    .BarrasLenguajes h2 { 
+        width: 100%; 
+        text-align: center; 
     }
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-    #contenedorLenguajes {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        padding: 25px;
+    #contenedorLenguajes { 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        padding: 25px; 
     }
-    
-    .BarrasLenguajes {
-        padding: 20px 30px;
-        gap: 20px;
+    .BarrasLenguajes { 
+        padding: 20px 30px; 
+        gap: 20px; 
     }
 }

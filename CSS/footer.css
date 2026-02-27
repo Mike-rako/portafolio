@@ -1,8 +1,18 @@
+/* ============================================================
+   footer.css — Footer del portafolio
+   
+   Tres columnas:
+     1. Descripción personal + redes sociales
+     2. Navegación rápida con efecto de flecha
+     3. Información de contacto
+   ============================================================ */
+
 footer {
     background-color: var(--color-bg-dark);
     margin-top: 80px;
 }
 
+/* Grid de 3 columnas: la primera más ancha (2fr) */
 .contenedor_footer {
     margin: 0;
     display: grid;
@@ -11,46 +21,26 @@ footer {
     border-top-left-radius: 15px;
     text-align: center;
     padding: 70px 40px;
+    /* Línea decorativa en el borde inferior con gradiente que desvanece en los extremos */
     border-image: linear-gradient(to right, transparent 10%, var(--color-border) 50%, transparent 90%) 1;
     gap: 40px;
 }
 
-footer h2 {
-    padding: 20px 0;
-    color: var(--color-text);
-    font-size: 1.5rem;
-    margin: 0;
-}
+footer h2 { padding: 20px 0; color: var(--color-text); font-size: 1.5rem; margin: 0; }
+footer p  { color: var(--color-text); line-height: 1.8; font-size: 14px; margin: 15px 0; }
+footer img { width: auto; height: 25px; transition: var(--transition-smooth); }
+footer div { display: flex; flex-direction: column; }
 
-footer p {
-    color: var(--color-text);
-    line-height: 1.8;
-    font-size: 14px;
-    margin: 15px 0;
-}
-
-footer img {
-    width: auto;
-    height: 25px;
-    transition: var(--transition-smooth);
-}
-
-footer div {
-    display: flex;
-    flex-direction: column;
-}
-
+/* Columna 1: descripción y redes */
 .footer_Portafolio {
     margin: 12px;
     text-align: left;
     gap: 15px;
 }
 
-.footer_Portafolio h2 {
-    text-align: left;
-    font-size: 2rem;
-}
+.footer_Portafolio h2 { text-align: left; font-size: 2rem; }
 
+/* Columna 2: navegación */
 .footer_navegacion {
     gap: 20px;
     align-items: center;
@@ -67,6 +57,7 @@ footer div {
     position: relative;
 }
 
+/* Flecha que aparece en hover deslizándose desde la izquierda */
 .footer_navegacion a::before {
     content: '→';
     position: absolute;
@@ -81,11 +72,9 @@ footer div {
     background-color: var(--color-bg-light);
 }
 
-.footer_navegacion a:hover::before {
-    opacity: 1;
-    left: 8px;
-}
+.footer_navegacion a:hover::before { opacity: 1; left: 8px; }
 
+/* Botones de redes en la columna 1 */
 #contenedor_footer_contacto {
     display: flex;
     flex-direction: row;
@@ -114,15 +103,17 @@ footer div {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-
-.footer_Contacto a:hover, #contenedor_footer_contacto a:hover{
+/* Animación de elevación en hover de los botones del footer */
+.footer_Contacto a:hover,
+#contenedor_footer_contacto a:hover {
     background-color: #cc2055;
     color: white;
     transition: transform 0.3s ease;
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Columna 3: contacto */
 .footer_Contacto {
     display: flex;
     flex-direction: column;
@@ -130,6 +121,7 @@ footer div {
     align-items: center;
 }
 
+/* Barra de copyright al pie */
 footer > div:last-child {
     text-align: center;
     padding: 30px 0;
@@ -137,14 +129,14 @@ footer > div:last-child {
     border-top: 1px solid var(--color-border);
 }
 
-footer > div:last-child h4 {
-    margin: 0;
-    color: var(--color-text);
-    font-size: 14px;
-    font-weight: normal;
+footer > div:last-child h4 { 
+    margin: 0; 
+    color: var(--color-text); 
+    font-size: 14px; 
+    font-weight: normal; 
 }
 
-/* Efecto hover en todo el footer */
+/* Efecto de elevación al hacer hover en cada columna del footer */
 .contenedor_footer > div {
     padding: 20px;
     border-radius: 15px;
@@ -156,59 +148,52 @@ footer > div:last-child h4 {
     transform: translateY(-5px);
 }
 
-@media(max-width:600px) {
-    .contenedor_footer {
-        display: flex;
-        flex-direction: column;
-        padding: 40px 20px;
-        gap: 30px;
+/* --- Breakpoints --- */
+
+/* Móvil: columna única, ocultar navegación */
+@media (max-width: 600px) {
+    .contenedor_footer { 
+        display: flex; 
+        flex-direction: column; 
+        padding: 40px 20px; 
+        gap: 30px; 
     }
-    
-    .footer_navegacion {
-        display: none;
+    .footer_navegacion { 
+        display: none; 
     }
-    
     .footer_Portafolio {
-        text-align: center;
+        text-align: center; 
     }
-    
-    .footer_Portafolio h2 {
-        text-align: center;
-        font-size: 1.5rem;
+    .footer_Portafolio h2 { 
+        text-align: center; 
+        font-size: 1.5rem; 
     }
-    
-    #contenedor_footer_contacto {
-        justify-content: center;
+    #contenedor_footer_contacto { 
+        justify-content: center; 
     }
-    
-    footer > div:last-child {
-        padding: 20px 10px;
+    footer > div:last-child { 
+        padding: 20px 10px; 
     }
-    
-    footer > div:last-child h4 {
-        font-size: 12px;
+    footer > div:last-child h4 { 
+        font-size: 12px; 
     }
 }
 
-@media(min-width:600px) and (max-width:1024px) {
-
-    
-    .contenedor_footer {
-        grid-template-columns: 1fr 1fr;
-        padding: 50px 30px;
-        gap: 30px;
+/* Tablet: 2 columnas, descripción ocupa el ancho completo */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .contenedor_footer { 
+        grid-template-columns: 1fr 1fr; 
+        padding: 50px 30px; 
+        gap: 30px; 
     }
-    
-    .footer_Portafolio {
-        grid-column: 1 / -1;
-        text-align: center;
+    .footer_Portafolio { 
+        grid-column: 1 / -1; 
+        text-align: center; 
     }
-    
-    .footer_Portafolio h2 {
-        text-align: center;
+    .footer_Portafolio h2 { 
+        text-align: center; 
     }
-    
-    #contenedor_footer_contacto {
-        justify-content: center;
+    #contenedor_footer_contacto { 
+        justify-content: center; 
     }
 }

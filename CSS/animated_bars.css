@@ -1,13 +1,23 @@
+/* ============================================================
+   animated_bars.css — Barras decorativas animadas del hero
+   
+   Las barras suben desde fuera de la pantalla hacia arriba
+   con rotación, creando un efecto de partículas de fondo.
+   Tienen pointer-events: none para no interferir con clicks.
+   ============================================================ */
+
 :root {
+  /* Color de las barras — usa el rojo primario del proyecto */
   --gradient-primary: linear-gradient(135deg, hsl(350 70% 45%), hsl(350 70% 55%));
-  --animation-slide: slide 6s linear infinite;
+  --animation-slide:  slide 6s linear infinite;
 }
 
-main{
+/* El main también actúa como contenedor del hero */
+main {
   position: relative;
   width: 100%;
   height: 870px;
-  overflow: hidden;
+  overflow: hidden; /* Recorta las barras fuera de sus límites */
   background: #0f1114;
   color: white;
   display: flex;
@@ -23,8 +33,8 @@ main{
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
-  pointer-events: none;
+  z-index: 0;         /* Detrás de todo el contenido del hero */
+  pointer-events: none; /* No bloquea clicks ni hover del contenido */
 }
 
 .animated-bar {
@@ -34,33 +44,23 @@ main{
   animation: var(--animation-slide);
 }
 
-/* Posicionar justo debajo del div con top: 100% */
-.animated-bar:nth-child(1) {
-  width: 4px; height: 200px; top: 100%; left: 10%; animation-delay: 0s;
-}
-.animated-bar:nth-child(2) {
-  width: 6px; height: 300px; top: 100%; left: 25%; animation-delay: -5s;
-}
-.animated-bar:nth-child(3) {
-  width: 3px; height: 150px; top: 100%; left: 40%; animation-delay: -10s;
-}
-.animated-bar:nth-child(4) {
-  width: 5px; height: 250px; top: 100%; left: 60%; animation-delay: -15s;
-}
-.animated-bar:nth-child(5) {
-  width: 4px; height: 180px; top: 100%; left: 75%; animation-delay: -7s;
-}
-.animated-bar:nth-child(6) {
-  width: 7px; height: 220px; top: 100%; left: 90%; animation-delay: -12s;
-}
+/* Cada barra arranca desde fuera del div (top: 100%)
+   con distinto tamaño, posición horizontal y delay
+   para que no suban todas al mismo tiempo */
+.animated-bar:nth-child(1) { width: 4px; height: 200px; top: 100%; left: 10%; animation-delay: 0s;   }
+.animated-bar:nth-child(2) { width: 6px; height: 300px; top: 100%; left: 25%; animation-delay: -5s;  }
+.animated-bar:nth-child(3) { width: 3px; height: 150px; top: 100%; left: 40%; animation-delay: -10s; }
+.animated-bar:nth-child(4) { width: 5px; height: 250px; top: 100%; left: 60%; animation-delay: -15s; }
+.animated-bar:nth-child(5) { width: 4px; height: 180px; top: 100%; left: 75%; animation-delay: -7s;  }
+.animated-bar:nth-child(6) { width: 7px; height: 220px; top: 100%; left: 90%; animation-delay: -12s; }
 
-/* Animación: suben completamente desde fuera del div hasta arriba */
+/* Sube la barra 820px (altura del hero) con rotación completa */
 @keyframes slide {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
   }
-  30%{
+  30% {
     opacity: 0.5;
   }
   90% {

@@ -1,39 +1,53 @@
+/* ============================================================
+   inicio.css — Hero: foto, título, subtítulo y botones
+   ============================================================ */
+
 body {
   margin: 0;
   background-color: #0f1114;
   font-family: monospace;
   color: #cecece;
 }
+
+/* Foto de perfil circular con borde del color primario */
 #foto {
   height: 160px;
   width: auto;
   border-radius: 100px;
   padding: 20px;
-    border: #cc2055 3px outset;
+  border: #cc2055 3px outset;
 }
+
 main h3 {
   font-family: "Courier New", Courier, monospace;
   font-size: 15pt;
   color: #cc2055;
 }
+
 main h4 {
   color: #cecece;
   font-size: 13pt;
 }
+
+/* Fila de botones de acción */
 main > div:last-child {
   display: flex;
   padding: 50px;
   gap: 30px;
   font-size: 12pt;
 }
+
 main > div:last-child img {
   width: auto;
   height: 20px;
 }
+
 main a {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Botones de contorno (CV y Ver proyectos) */
 #CV_Proyectos {
   display: flex;
   padding: 10px;
@@ -45,10 +59,13 @@ main a {
   gap: 10px;
   font-weight: bold;
 }
+
 #CV_Proyectos:hover {
   background-color: #cc2055;
   color: #0f1114;
 }
+
+/* Botones sólidos con efecto flip 3D (GitHub y LinkedIn) */
 .rotacion {
   display: flex;
   padding: 10px;
@@ -63,22 +80,25 @@ main a {
   perspective: 1000px;
   border: #cc2055 solid 2px;
 }
+
 .rotacion:hover {
   background-color: transparent;
   color: #cc2055;
   transform: rotateY(360deg);
 }
+
+/* Móvil: apilar botones en columna */
 @media (max-width: 600px) {
   main > div:last-child {
     padding: 80px;
     flex-direction: column;
   }
+
   main h4 {
     font-size: 9pt;
   }
-}
-@media (max-width: 600px) {
-  #foto{
+
+  #foto {
     scale: 0.7;
   }
 }

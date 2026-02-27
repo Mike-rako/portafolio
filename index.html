@@ -26,42 +26,46 @@
     <link rel="stylesheet" href="CSS/footer.css" />
     <!-- Toda la parte de imformacion del final -->
   </head>
-  <header>
-    <!-- Barra de navegacion-->
+  
+  <body>
 
-    <div>
-      <h3>Portafolio</h3>
-    </div>
+    <header>
+      <!-- Barra de navegacion - Fijo al hacer scroll (clase .fijo via JS)
+         Contiene: logo, nav principal, botón de idioma,
+         GitHub, toggle de tema y menú hamburguesa (móvil)-->
 
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#Sobre_mi">Sobre mi</a>
-      <a href="#Lenguajes_Programacion">Lenguajes</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#Contacto">Contacto</a>
-    </nav>
+      <div>
+        <h3>Portafolio</h3>
+      </div>
 
-    <div>
-      <button id="btn-idioma" title="Cambiar idioma / Change language">EN</button>
-      <a href="https://github.com/Mike-rako">
-        <img src="media/github.png" id="github" alt="" />
-      </a>
-      
-      <img src="media/Tema_oscuro.png" id="Tema" alt="" />
-      <div id="menu-btn">☰</div>
-
-      <nav id="menu">
+      <nav>
         <a href="#">Inicio</a>
         <a href="#Sobre_mi">Sobre mi</a>
         <a href="#Lenguajes_Programacion">Lenguajes</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#Contacto">Contacto</a>
       </nav>
-    </div>
-  </header>
-  <body>
-    <!-- Inicio -->
 
+      <div>
+        <button id="btn-idioma" title="Cambiar idioma / Change language">EN</button>
+        <a href="https://github.com/Mike-rako">
+          <img src="media/github.png" id="github" alt="" />
+        </a>
+        
+        <img src="media/Tema_oscuro.png" id="Tema" alt="" />
+        <div id="menu-btn">☰</div>
+
+        <nav id="menu">
+          <a href="#">Inicio</a>
+          <a href="#Sobre_mi">Sobre mi</a>
+          <a href="#Lenguajes_Programacion">Lenguajes</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#Contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Barras verticales decorativas — animadas en animated_bars.css -->
     <main>
       <div class="animated-bars">
         <div class="animated-bar bar1"></div>
@@ -71,7 +75,9 @@
         <div class="animated-bar bar5"></div>
         <div class="animated-bar bar6"></div>
       </div>
-      <img src="media/Icontest fix.png" id="foto" alt="" /><!-- Mi foto -->
+      <img src="media/Icontest fix.png" id="foto" alt="" />
+
+      <!-- La animación de escritura se controla en write.css con @keyframes -->
       <h1 id="Nombre">Michael Barillas</h1>
       <h3>Desarrollador de software</h3>
       <h4>
@@ -92,8 +98,9 @@
           LinkedIn
         </a>
 
+        <!-- id="CV_descargar" — el href cambia según idioma activo en Idioma.js -->
         <a
-          href="media/CV Michael Barillas Nuñez.pdf"
+          href="media/CV Michael Barillas Nuñez ES.pdf"
           download
           id="CV_Proyectos"
           class="boton-boing"
@@ -109,10 +116,13 @@
       </div>
     </main>
 
-    <!-- Sobre mi -->
+    <!-- SOBRE MÍ — Descripción personal, habilidades blandas,
+         barras de especialización-->
 
     <div class="Seccion_sobre_mi">
       <h1 class="titulo" id="Sobre_mi">Sobre mi</h1>
+
+      <!-- Grid de dos columnas: izquierda = datos, derecha = tarjetas -->
 
       <div id="separacion">
         <div id="datos">
@@ -174,6 +184,8 @@
             </div>
           </div>
 
+          <!-- Barras de nivel por área — porcentajes definidos en barras_sobre_mi.css -->
+
           <div id="datos_barras">
             <div id="contenedorBarras">
               <div id="barra">
@@ -220,7 +232,7 @@
           </a>
         </div>
 
-        <!-- Cuardro de especializaciones -->
+        <!-- Tarjetas de áreas de especialización -->
 
         <div id="contenedor">
           <div class="tarjetas_especializaciones">
@@ -266,7 +278,8 @@
       </div>
     </div>
 
-    <!-- lenguajes de programcion -->
+    <!-- Lenguajes de programacion — Barras de progreso por tecnología
+         Las barras se animan al hacer hover sobre cada card -->
 
     <h1 class="titulo" id="Lenguajes_Programacion">
       lenguajes de Programacion
@@ -276,7 +289,7 @@
         <div id="Barra_Completa_Lenguajes">
           <div id="Barra_actual_Python"></div>
         </div>
-        <h2>95%</h2>
+        <h2>100%</h2>
         <h2>Python</h2>
       </div>
 
@@ -284,7 +297,7 @@
         <div id="Barra_Completa_Lenguajes">
           <div id="Barra_actual_Csharp"></div>
         </div>
-        <h2>70%</h2>
+        <h2>80%</h2>
         <h2>C#</h2>
       </div>
 
@@ -300,7 +313,7 @@
         <div id="Barra_Completa_Lenguajes">
           <div id="Barra_actual_HTML"></div>
         </div>
-        <h2>85%</h2>
+        <h2>100%</h2>
         <h2>Html</h2>
       </div>
 
@@ -308,7 +321,7 @@
         <div id="Barra_Completa_Lenguajes">
           <div id="Barra_actual_CSS"></div>
         </div>
-        <h2>75%</h2>
+        <h2>80%</h2>
         <h2>CSS</h2>
       </div>
 
@@ -316,7 +329,7 @@
         <div id="Barra_Completa_Lenguajes">
           <div id="Barra_actual_SQL"></div>
         </div>
-        <h2>65%</h2>
+        <h2>75%</h2>
         <h2>SQL</h2>
       </div>
     </div>
@@ -349,11 +362,15 @@
       </div>
     </div>
 
-    <!-- Proyectos -->
+    <!--  PROYECTOS — Grid de tarjetas
+         Al hacer click en una tarjeta se abre un modal con la info
+         completa. La lógica del modal y la galería está en Ver_Proyecto.js. -->
 
     <h1 class="titulo" id="proyectos">Proyectos</h1>
 
     <div id="contenedor_Proyectos">
+
+      <!-- Proyecto 1 -->
       <div class="Proyectos">
         <h4>Portafolio</h4>
 
@@ -389,6 +406,7 @@
         </div>
       </div>
 
+      <!-- Proyecto 2 -->
       <div class="Proyectos">
         <h4>Auto clicker</h4>
 
@@ -423,6 +441,7 @@
         </div>
       </div>
 
+      <!-- Proyecto 3 -->
       <div class="Proyectos">
         <h4>sistema-heladeria</h4>
 
@@ -456,6 +475,7 @@
         </div>
       </div>
 
+      <!-- Proyecto 4 -->
       <div class="Proyectos">
         <h4>Pagina web de Tienda musical</h4>
 
@@ -491,6 +511,7 @@
         </div>
       </div>
 
+      <!-- Proyecto 5 -->
       <div class="Proyectos">
         <h4>Sistema-de-Gestion-de-Inventario-ASP.NET</h4>
 
@@ -531,6 +552,7 @@
         </div>
       </div>
 
+      <!-- Proyecto 6 -->
       <div class="Proyectos">
         <h4>tse-costa-rica-api</h4>
 
@@ -565,6 +587,7 @@
         </div>
       </div>
 
+      <!-- Proyecto 7 -->
       <div class="Proyectos">
         <h4>Sistema de Automatización de Documentos Administrativos</h4>
 
@@ -595,6 +618,7 @@
         </div>
       </div>
 
+      <!-- Proyecto 8 -->
       <div class="Proyectos">
         <h4>Sistema Automatizado de Monitoreo y Análisis de Publicaciones Judiciales</h4>
 
@@ -636,7 +660,7 @@
 
         
 
-    <!-- Contacto -->
+    <!-- CONTACTO — Formulario (via Formspree) y tarjetas de redes -->
 
     <div>
       <h1 class="titulo" id="Contacto">Contacto</h1>
@@ -683,7 +707,7 @@
       </div>
     </div>
 
-    <!-- Contenido del footer -->
+    <!-- FOOTER — Descripción, navegación rápida y contacto -->
 
     <footer>
       <div class="contenedor_footer">
@@ -733,7 +757,14 @@
       </div>
     </footer>
 
-    <!-- Scripts necesarios -->
+    <!-- SCRIPTS — Cargados al final para no bloquear el render
+         Orden importante:
+           1. anime.js     — librería de animaciones (dependencia)
+           2. animation.js — usa anime.js, debe cargarse después
+           3. functions.js — scroll y menú hamburguesa
+           4. Ver_Proyecto.js — modal y carrusel de proyectos
+           5. Tema_Claro.js   — toggle de tema claro/oscuro
+           6. Idioma.js       — sistema de traducción ES/EN -->
 
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <script type="module" src="JS/animation.js"></script>

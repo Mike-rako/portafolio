@@ -1,19 +1,30 @@
+/* ============================================================
+   header.css — Estilos globales y barra de navegación
+   
+   También define las variables CSS globales usadas en
+   todos los demás archivos CSS del proyecto.
+   ============================================================ */
+
+/* --- Variables globales --- */
+/* Centralizar colores y transiciones aquí facilita
+   cambiar el tema visual desde un solo lugar */
 :root {
-    --color-primary: #cc2055;
-    --color-primary-dark: #a81741;
-    --color-bg-dark: #0f1114;
-    --color-bg-darker: #131619;
-    --color-bg-light: #1e2227;
-    --color-border: #272c33;
-    --color-text: #cecece;
-    --color-text-white: #f8fafc;
-    --color-accent: #ffd700;
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --color-primary:       #cc2055;
+    --color-primary-dark:  #a81741;
+    --color-bg-dark:       #0f1114;
+    --color-bg-darker:     #131619;
+    --color-bg-light:      #1e2227;
+    --color-border:        #272c33;
+    --color-text:          #cecece;
+    --color-text-white:    #f8fafc;
+    --color-accent:        #ffd700;
+    --transition-smooth:   all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* --- Header base --- */
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr; /* Logo | Nav | Controles */
     background-color: var(--color-bg-dark);
     padding: 1rem;
     justify-content: space-between;
@@ -28,6 +39,7 @@ header {
     transition: var(--transition-smooth);
 }
 
+/* Estado fijo: se activa con JS al hacer scroll (ver functions.js) */
 header.fijo {
     position: fixed;
     top: 0;
@@ -40,10 +52,12 @@ header.fijo {
     background-color: rgba(15, 17, 20, 0.95);
 }
 
+/* Compensa el scroll cuando el header es fijo y ocupa espacio */
 header.fijo div:last-child {
     padding-right: 33px;
 }
 
+/* --- Navegación principal --- */
 header nav {
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +74,7 @@ header nav a {
     border-radius: 8px;
 }
 
+/* Subrayado animado con pseudo-elemento — se expande en hover */
 header nav a::after {
     content: '';
     position: absolute;
@@ -82,6 +97,7 @@ header nav a:hover::after {
     transform: translateX(-50%) scaleX(1);
 }
 
+/* --- Controles del lado derecho (GitHub, tema, idioma) --- */
 header > div:last-child {
     display: flex;
     justify-content: flex-end;
@@ -102,6 +118,7 @@ header > div:last-child img:hover {
     transform: rotate(180deg);
 }
 
+/* Título "Portafolio" con gradiente dorado */
 header > div:first-child h3 {
     font-family: 'Courier New', Courier, monospace;
     color: var(--color-accent);
@@ -113,8 +130,9 @@ header > div:first-child h3 {
     background-clip: text;
 }
 
+/* --- Menú hamburguesa (solo móvil) --- */
 #menu-btn {
-    display: none;
+    display: none; /* Se muestra en el breakpoint de móvil */
     font-size: 28px;
     color: var(--color-text-white);
     cursor: pointer;
@@ -127,6 +145,7 @@ header > div:first-child h3 {
     background-color: var(--color-bg-light);
 }
 
+/* Menú desplegable: oculto por defecto, .show lo activa via JS */
 #menu {
     display: none;
     flex-direction: column;
@@ -146,7 +165,7 @@ header > div:first-child h3 {
     animation: slideIn 0.3s ease;
 }
 
-/* Estilos para el botón de cambio de idioma */
+/* --- Botón de cambio de idioma --- */
 #btn-idioma {
     background-color: var(--color-primary);
     color: white;
@@ -162,7 +181,6 @@ header > div:first-child h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #btn-idioma:hover {
@@ -177,7 +195,7 @@ header > div:first-child h3 {
     box-shadow: 0 2px 6px rgba(204, 32, 85, 0.3);
 }
 
-/* Ajuste para el modo claro */
+/* Ajuste del botón de idioma en tema claro (aplicado via Tema_Claro.js) */
 .tema-claro #btn-idioma {
     background-color: #cc2055;
     color: white;
@@ -189,6 +207,7 @@ header > div:first-child h3 {
     color: #cc2055;
 }
 
+/* --- Animación de entrada del menú móvil --- */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -215,72 +234,12 @@ header > div:first-child h3 {
     border-bottom: none;
 }
 
-/* Estilos base para la galería */
-#contenedor_temporal .galeria {
-  position: relative;
-}
+/* ============================================================
+   Estilos del visor de imagen en pantalla completa
+   (usado en Ver_Proyecto.js al hacer click en imágenes del modal)
+   ============================================================ */
 
-#contenedor_temporal .galeria img {
-  cursor: zoom-in;
-  transition: transform 0.2s;
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
-
-/* En desktop: hover sutil */
-@media (hover: hover) and (pointer: fine) {
-  #contenedor_temporal .galeria img:hover {
-    transform: scale(1.02);
-  }
-  
-  #contenedor_temporal .galeria::after {
-    content: "Click para ampliar";
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 12px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none;
-    white-space: nowrap;
-  }
-  
-  #contenedor_temporal .galeria:hover::after {
-    opacity: 1;
-  }
-}
-
-/* En móvil: indicador fijo sutil */
-@media (hover: none) and (pointer: coarse) {
-  #contenedor_temporal .galeria::after {
-    content: "Toca para ampliar";
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 11px;
-    pointer-events: none;
-    white-space: nowrap;
-    animation: fadeInOut 3s ease-in-out;
-  }
-  
-  @keyframes fadeInOut {
-    0%, 100% { opacity: 0; }
-    10%, 90% { opacity: 1; }
-  }
-}
-
-/* Fullscreen responsive */
+/* Overlay semi-transparente de pantalla completa */
 .imagen-fullscreen {
   position: fixed;
   top: 0;
@@ -305,7 +264,7 @@ header > div:first-child h3 {
   -webkit-touch-callout: none;
 }
 
-/* Botón cerrar adaptable */
+/* Botón cerrar del visor fullscreen */
 .cerrar-fullscreen {
   position: absolute;
   top: 10px;
@@ -332,8 +291,65 @@ header > div:first-child h3 {
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* Ajustes para móvil */
-@media (max-width: 768px) {
+/* Indicador de "Click para ampliar" (solo desktop con hover real) */
+@media (hover: hover) and (pointer: fine) {
+  #contenedor_temporal .galeria img {
+    cursor: zoom-in;
+    transition: transform 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  #contenedor_temporal .galeria img:hover {
+    transform: scale(1.02);
+  }
+
+  #contenedor_temporal .galeria::after {
+    content: "Click para ampliar";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  #contenedor_temporal .galeria:hover::after {
+    opacity: 1;
+  }
+}
+
+/* En móvil se muestra "Toca para ampliar" de forma breve al cargar */
+@media (hover: none) and (pointer: coarse) {
+  #contenedor_temporal .galeria::after {
+    content: "Toca para ampliar";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    pointer-events: none;
+    white-space: nowrap;
+    animation: fadeInOut 3s ease-in-out;
+  }
+
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    10%, 90%  { opacity: 1; }
+  }
+
   .cerrar-fullscreen {
     top: 15px;
     right: 15px;
@@ -341,23 +357,25 @@ header > div:first-child h3 {
     width: 45px;
     height: 45px;
   }
-  
+
   .imagen-fullscreen img {
     max-width: 98%;
     max-height: 98%;
   }
 }
 
-/* Para móviles */
+/* --- Breakpoints --- */
+
+/* Móvil: ocultar nav principal, mostrar hamburguesa */
 @media (max-width: 600px) {
     #menu-btn {
         display: block;
     }
-    
+
     header.fijo #menu-btn {
         padding-right: 13px;
     }
-    
+
     header {
         display: flex;
         align-items: center;
@@ -372,21 +390,22 @@ header > div:first-child h3 {
     header > div:last-child img:first-child {
         display: none;
     }
-    
+
     header > div:first-child h3 {
         font-size: 1.2rem;
     }
-    #btn-idioma{
+
+    #btn-idioma {
         scale: 0.7;
     }
 }
 
-/* Tablets */
+/* Tablet */
 @media (min-width: 600px) and (max-width: 1024px) {
     header {
         grid-template-columns: 1fr 1.5fr 1fr;
     }
-    
+
     header nav a {
         padding: 12px;
         font-size: 0.9rem;

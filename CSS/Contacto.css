@@ -1,7 +1,17 @@
+/* ============================================================
+   Contacto.css — Sección de contacto
+   
+   Layout de dos columnas:
+     izquierda → formulario de correo (via Formspree)
+     derecha   → tarjetas de GitHub y LinkedIn
+   ============================================================ */
+
+/* Grid de dos columnas iguales */
 .contenedor_contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .contenedor_contacto img {
   width: 60px;
   height: auto;
@@ -9,17 +19,19 @@
   border-radius: 10px;
   padding: 3px;
 }
-.contenedor_contacto * {
-  text-decoration: none;
-}
+
+.contenedor_contacto * { text-decoration: none; }
+
+/* Tarjetas de redes: espaciado y alineación */
 .contenedor_contacto div div {
   align-items: center;
   padding: 40px 0px;
   gap: 20px;
 }
-.contenedor_contacto div div h1 {
-  margin: 0%;
-}
+
+.contenedor_contacto div div h1 { margin: 0%; }
+
+/* Botón de "Ver mi perfil" dentro de las tarjetas */
 .contenedor_contacto div div a {
   display: flex;
   align-items: center;
@@ -32,6 +44,8 @@
   font-family: monospace;
   cursor: pointer;
 }
+
+/* Transición de hover compartida entre el formulario y las tarjetas */
 #correo,
 .contenedor_contacto div div {
   transition: var(--transition-smooth);
@@ -42,13 +56,15 @@
   border-color: var(--color-primary);
   box-shadow: 0 10px 30px rgba(204, 32, 85, 0.2);
 }
+
+/* --- Formulario de contacto --- */
 #correo {
   padding: 40px 0px;
 }
-#correo p {
-  text-align: center;
-  padding: 10px;
-}
+
+#correo p { text-align: center; padding: 10px; }
+
+/* Las cards (formulario y redes) comparten el mismo estilo de contenedor */
 #correo,
 .contenedor_contacto div div {
   display: flex;
@@ -57,21 +73,19 @@
   border-radius: 15px;
   margin: 20px;
 }
-#correo h1 {
-  text-align: center;
-}
-#correo button {
-  margin: 20px 0px;
-  padding: 10px 0px;
-}
+
+#correo h1 { text-align: center; }
+#correo button { margin: 20px 0px; padding: 10px 0px; }
+
 #correo form {
   display: flex;
   flex-direction: column;
   padding: 0px 30px;
 }
-#correo form textarea {
-  resize: none;
-}
+
+/* Deshabilitar el resize manual del textarea */
+#correo form textarea { resize: none; }
+
 #correo input,
 #correo textarea {
   width: 50%;
@@ -81,6 +95,8 @@
   color: #cecece;
   font-size: 16px;
 }
+
+/* Botón de envío del formulario */
 #correo button {
   background-color: #cc2055;
   color: black;
@@ -88,8 +104,10 @@
   border-radius: 15px;
   cursor: pointer;
 }
+
+/* Animación de elevación compartida entre botón enviar y "Ver perfil" */
 #correo button,
-.contenedor_contacto div div a{
+.contenedor_contacto div div a {
   display: inline-block;
   transform: translateY(0);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -100,7 +118,7 @@
   color: white;
   transition: transform 0.3s ease;
   transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 #correo form textarea {
@@ -108,24 +126,13 @@
   height: 170px;
 }
 
-@media (max-width: 600px) {
-  .contenedor_contacto {
-    display: flex;
-    flex-direction: column;
-  }
-  .contenedor_contacto > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .contenedor_contacto > div p {
-    text-align: center;
-    font-size: 12px;
-  }
-  #correo input{
-    width: 80%;
-  }
+/* --- Breakpoints --- */
 
-  #correo textarea{
-    scale: 1.1;
-  }
+/* Móvil: */
+@media (max-width: 600px) {
+  .contenedor_contacto { display: flex; flex-direction: column; }
+  .contenedor_contacto > div { display: grid; grid-template-columns: 1fr 1fr; }
+  .contenedor_contacto > div p { text-align: center; font-size: 12px; }
+  #correo input { width: 80%; }
+  #correo textarea { scale: 1.1; }
 }

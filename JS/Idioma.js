@@ -20,7 +20,7 @@ const traducciones = {
 
     // Sobre mi
     titulo_sobre_mi: "Sobre mi",
-    descripcion_sobre_mi: `Soy Michael David Barillas Núñez, desarrollador de software orientado a resultados con expertise en desarrollo Backend. Mi enfoque principal es transformar requisitos de negocio en soluciones técnicas eficientes, escalables y mantenibles.<br /><br />
+    descripcion_sobre_mi: `Soy Michael David Barillas Núñez, desarrollador de software full stack apasionado por crear soluciones robustas y escalables. Mi enfoque principal es transformar requisitos de negocio en soluciones técnicas eficientes, escalables y mantenibles.<br /><br />
 
 Con experiencia comprobada en Python, C#, SQL y tecnologías web, he desarrollado múltiples proyectos que incluyen sistemas de gestión, APIs RESTful y aplicaciones web completas. Mi conocimiento en Linux me permite gestionar y optimizar servidores para garantizar el mejor rendimiento de las aplicaciones.<br /><br />
 
@@ -146,7 +146,7 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
 
     // Sobre mi
     titulo_sobre_mi: "About me",
-    descripcion_sobre_mi: `I am Michael David Barillas Núñez, a results-oriented software developer with expertise in Backend development. My main focus is to transform business requirements into efficient, scalable and maintainable technical solutions.<br /><br />
+    descripcion_sobre_mi: `I am Michael David Barillas Núñez, a full-stack software developer passionate about building robust and scalable solutions. My primary focus is transforming business requirements into efficient, scalable, and maintainable technical solutions.<br /><br />
 
 With proven experience in Python, C#, SQL and web technologies, I have developed multiple projects including management systems, RESTful APIs and complete web applications. My knowledge in Linux allows me to manage and optimize servers to ensure the best performance of applications.<br /><br />
 
@@ -256,7 +256,6 @@ I bring not only solid technical skills, but also teamwork ability, effective co
 
 // Función para cambiar el idioma
 function cambiarIdioma(idioma) {
-  console.log(document.getElementById("CV_Sobre_mi").getAttribute("href"));
   const t = traducciones[idioma];
 
   try {

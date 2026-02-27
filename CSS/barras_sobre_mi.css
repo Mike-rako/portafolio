@@ -1,35 +1,31 @@
-#contenedorBarras{
+/* ============================================================
+   barras_sobre_mi.css — Barras de nivel en "Sobre mí"
+   
+   Estas barras son estáticas (no animadas).
+   El porcentaje visual está definido por el width de cada
+   barra interna (#barraBackend, #barraBaseDatos, etc.)
+   ============================================================ */
+
+#contenedorBarras {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-#barra{
+
+/* Contenedor exterior de la barra (fondo oscuro) */
+#barra {
     height: 3px;
     width: 55%;
     background-color: black;
 }
-#barraBackend{
-    height: 3px;
-    width: 90%;
-    background-color: #a81741;
-}
-#barraBaseDatos{
-    height: 3px;
-    width: 80%;
-    background-color: #a81741;
-}
-#barraWeb{
-    height: 3px;
-    width: 70%;
-    background-color: #a81741;
-}
-#barraDesSoftware{
-    height: 3px;
-    width: 80%;
-    background-color: #a81741;
-}
-@media(max-width:600px){
-    #barra{
-        width: 95px;
-    }
+
+/* Relleno de cada barra según el nivel de la habilidad */
+#barraBackend    { height: 3px; width: 90%; background-color: #a81741; }
+#barraBaseDatos  { height: 3px; width: 80%; background-color: #a81741; }
+#barraWeb        { height: 3px; width: 70%; background-color: #a81741; }
+#barraDesSoftware{ height: 3px; width: 80%; background-color: #a81741; }
+
+/* Móvil: reducir el ancho del contenedor para que quepa */
+@media (max-width: 600px) {
+    #barra { width: 95px; }
 }

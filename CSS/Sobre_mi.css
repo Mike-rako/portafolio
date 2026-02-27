@@ -1,32 +1,56 @@
-.Seccion_sobre_mi{
+/* ============================================================
+   Sobre_mi.css — Sección "Sobre mí"
+   
+   Contiene:
+     - Layout de dos columnas (datos | tarjetas)
+     - Chips de habilidades blandas
+     - Botón de descarga de CV
+     - Tarjetas de especialización con hover
+   ============================================================ */
+
+/* Línea superior que separa visualmente el hero de esta sección */
+.Seccion_sobre_mi {
     border-top: 1px solid #a81741;
 }
-.Seccion_sobre_mi h1{
+
+.Seccion_sobre_mi h1 {
     text-align: center;
     color: #cecece;
 }
-.Seccion_sobre_mi #datos h4{
+
+.Seccion_sobre_mi #datos h4 {
     font-size: 13pt;
 }
-#separacion{
+
+/* Grid de dos columnas: 
+   izquierda → descripción, habilidades, barras y CV
+   derecha   → tarjetas de especialización */
+#separacion {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
 }
-.titulo{
+
+/* Clase compartida para títulos de sección con scroll-margin
+   para compensar el header fijo al navegar con anclas */
+.titulo {
     scroll-margin-top: 125px;
     text-align: center;
     padding: 45px;
 }
-#contenedor{
+
+/* Grid 2x2 para las tarjetas de especialización */
+#contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin: 15px;
     padding: 15px;
 }
-#CV_Sobre_mi{
+
+/* Botón de descarga del CV — centrado y con borde primario */
+#CV_Sobre_mi {
     margin: 0px auto;
-    font-family:monospace;
+    font-family: monospace;
     text-decoration: none;
     display: flex;
     padding: 10px;
@@ -39,21 +63,20 @@
     width: fit-content;
     font-weight: bold;
     font-size: 12pt;
-
 }
-#CV_Sobre_mi:hover{
+
+#CV_Sobre_mi:hover {
     background-color: #cc2055;
 }
-#CV_Sobre_mi img{
+
+#CV_Sobre_mi img {
     width: auto;
     height: 20px;
 }
-#Contenedor_Habilidades_blandas{
-    font-family:monospace;
-    display: flex;
-    gap: 10px;
-}
-.Habilidades_blandas{
+
+/* --- Chips de habilidades blandas --- */
+/* animation.js aplica un brillo aleatorio a cada chip cada 2 segundos */
+.Habilidades_blandas {
     background-color: #131619;
     border: #272c33 solid 1px;
     border-radius: 15px;
@@ -62,12 +85,19 @@
     margin: 5px;
     transition: box-shadow 0.3s ease;
 }
-#datos{
+
+/* Padding de la columna izquierda */
+#datos {
     padding: 0px 50px 50px 50px;
 }
-#datos_barras{
+
+#datos_barras {
     padding: 40px;
 }
+
+/* --- Tarjetas de especialización --- */
+/* El ::before con gradiente se activa en hover para dar
+   un efecto de iluminación sutil */
 .tarjetas_especializaciones {
     padding: 30px 20px;
     text-align: center;
@@ -110,6 +140,7 @@
     box-shadow: 0 15px 40px rgba(204, 32, 85, 0.3);
 }
 
+/* El ícono rota levemente al hacer hover en la tarjeta */
 .tarjetas_especializaciones:hover img {
     transform: scale(1.1) rotate(5deg);
 }
@@ -126,27 +157,18 @@
     color: var(--color-text);
     margin: 10px 0;
 }
-@media(max-width:600px){
-    #datos{
-        padding: 20px;
-    }
-    #datos_barras{
-        padding: 20px;
-    }
-    #separacion{
-        display: flex;
-        flex-direction: column;
-    }
-    #contenedor{
-        margin: 7px;
-        gap: 10px;
-        display: flex;
-        flex-direction: column;
-    }
+
+/* --- Breakpoints --- */
+
+/* Móvil:*/
+@media (max-width: 600px) {
+    #datos { padding: 20px; }
+    #datos_barras { padding: 20px; }
+    #separacion { display: flex; flex-direction: column; }
+    #contenedor { margin: 7px; gap: 10px; display: flex; flex-direction: column; }
 }
-@media (min-width: 600px) and (max-width: 1024px){
-    #separacion{
-        display: flex;
-        flex-direction: column;
-    }
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+    #separacion { display: flex; flex-direction: column; }
 }

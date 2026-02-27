@@ -1,32 +1,42 @@
+/* ============================================================
+   write.css — Animación de máquina de escribir en el nombre
+   
+   Usa dos @keyframes combinados:
+     - "escribir": expande el width de 0 a los caracteres del nombre
+     - "parpadeo": hace parpadear el cursor (border-right)
+   
+   El número de steps(22) debe coincidir con la cantidad
+   de caracteres del nombre ("Michael Barillas" = 17 chars,
+   pero se usa 22 para incluir el padding visual).
+   Si cambias el nombre, ajusta steps() y el width final.
+   ============================================================ */
+
 #Nombre {
   font-family: monospace;
   font-size: 3lh;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid white; /* cursor parpadeante */
+  border-right: 2px solid white; /* El borde derecho actúa como cursor */
   width: 0;
-  animation: escribir 3s steps(22) 1s forwards, parpadeo 0.75s step-end infinite;
+  animation:
+    escribir 3s steps(22) 1s forwards,  /* 1s de delay antes de empezar */
+    parpadeo 0.75s step-end infinite;
 }
 
-@media (max-width: 600px){
-    #Nombre {
-    font-family: monospace;
+/* Ajuste de tamaño en móvil */
+@media (max-width: 600px) {
+  #Nombre {
     font-size: 27px;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid white; /* cursor parpadeante */
-    width: 0;
-    animation: escribir 3s steps(22) 1s forwards, parpadeo 0.75s step-end infinite;
-    }
+  }
 }
 
-/* Animación de escritura */
+/* Expande el contenedor hasta mostrar todos los caracteres */
 @keyframes escribir {
   from { width: 0; }
-  to { width: 17ch; } /* cambia según la cantidad de caracteres */
+  to   { width: 17ch; } /* 17 caracteres: "Michael Barillas" */
 }
 
-/* Animación del cursor */
+/* Cursor parpadeante: alterna entre visible e invisible */
 @keyframes parpadeo {
   50% { border-color: transparent; }
 }
