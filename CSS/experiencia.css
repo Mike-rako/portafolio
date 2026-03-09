@@ -1,0 +1,265 @@
+/* ============================================================
+   Experiencia.css — Sección de experiencia profesional
+   
+   Layout de línea de tiempo vertical con tarjeta destacada.
+   La imagen del proyecto aparece a la izquierda y el contenido
+   textual a la derecha, con animación de entrada al hacer scroll.
+   ============================================================ */
+
+.seccion_experiencia {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+/* Contenedor principal con línea de tiempo centrada */
+.contenedor_experiencia {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px 40px 40px;
+}
+
+/* Línea vertical decorativa */
+.timeline_linea {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-primary) 10%,
+    var(--color-primary) 90%,
+    transparent
+  );
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Tarjeta de experiencia */
+.exp_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+  position: relative;
+  padding: 30px 0;
+}
+
+/* Punto circular sobre la línea de tiempo */
+.exp_punto {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  border: 3px solid var(--color-bg-dark);
+  box-shadow: 0 0 0 4px var(--color-primary), 0 0 20px rgba(204, 32, 85, 0.5);
+  z-index: 2;
+  animation: pulsoPunto 2s ease-in-out infinite;
+}
+
+@keyframes pulsoPunto {
+  0%, 100% { box-shadow: 0 0 0 4px var(--color-primary), 0 0 20px rgba(204, 32, 85, 0.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(204, 32, 85, 0.2), 0 0 35px rgba(204, 32, 85, 0.6); }
+}
+
+/* --- Columna izquierda: imagen --- */
+.exp_imagen_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 30px;
+}
+
+.exp_imagen {
+  width: 100%;
+  max-width: 380px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid var(--color-border);
+  transition: var(--transition-smooth);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.exp_imagen:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 12px 40px rgba(204, 32, 85, 0.3);
+  transform: scale(1.02);
+}
+
+/* --- Columna derecha: contenido textual --- */
+.exp_contenido {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Fila superior: badge + fecha */
+.exp_header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Etiqueta "Práctica Profesional" */
+.exp_badge {
+  background-color: rgba(204, 32, 85, 0.15);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+
+.exp_fecha {
+  color: var(--color-text);
+  font-size: 13px;
+  font-family: monospace;
+  opacity: 0.7;
+}
+
+/* Nombre de la empresa */
+.exp_empresa {
+  color: var(--color-accent);
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Cargo / Rol */
+.exp_cargo {
+  color: var(--color-primary);
+  font-size: 1rem;
+  margin: 0;
+  font-family: monospace;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+/* Párrafos de descripción */
+.exp_descripcion {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.exp_descripcion strong {
+  color: var(--color-text-white);
+}
+
+/* Chips de tecnologías */
+.exp_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 5px;
+}
+
+.exp_tag {
+  background-color: var(--color-bg-darker);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-family: monospace;
+  font-weight: bold;
+  transition: var(--transition-smooth);
+  cursor: default;
+}
+
+.exp_tag:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: rgba(204, 32, 85, 0.08);
+}
+
+/* Aviso de certificado */
+.exp_certificado {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text);
+  font-size: 13px;
+  font-family: monospace;
+  opacity: 0.75;
+  padding: 10px 15px;
+  border-left: 2px solid var(--color-primary);
+  background-color: rgba(204, 32, 85, 0.05);
+  border-radius: 0 8px 8px 0;
+  margin-top: 5px;
+}
+
+.exp_cert_icon {
+  color: var(--color-primary);
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+/* --- Breakpoints --- */
+
+/* Tablet: apilar en columna, imagen arriba */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .timeline_linea { display: none; }
+  .exp_punto      { display: none; }
+  .exp_card {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 20px 0;
+  }
+  .exp_imagen_wrapper {
+    justify-content: center;
+    padding-right: 0;
+  }
+  .exp_contenido {
+    padding-left: 0;
+  }
+  .contenedor_experiencia {
+    padding: 0 30px 30px 30px;
+  }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+  .timeline_linea { display: none; }
+  .exp_punto      { display: none; }
+  .contenedor_experiencia {
+    padding: 0 15px 30px 15px;
+  }
+  .exp_card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px 0;
+  }
+  .exp_imagen_wrapper {
+    justify-content: center;
+    padding-right: 0;
+  }
+  .exp_imagen {
+    max-width: 100%;
+    height: 200px;
+  }
+  .exp_contenido {
+    padding-left: 0;
+    gap: 12px;
+  }
+  .exp_empresa {
+    font-size: 1.5rem;
+  }
+}

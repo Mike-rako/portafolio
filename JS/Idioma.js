@@ -4,6 +4,7 @@ const traducciones = {
     // Header
     nav_inicio: "Inicio",
     nav_sobre_mi: "Sobre mi",
+    nav_experiencia: "Experiencia",
     nav_lenguajes: "Lenguajes",
     nav_proyectos: "Proyectos",
     nav_contacto: "Contacto",
@@ -99,6 +100,15 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
     proyecto8_desc:
       "Sistema desarrollado en Python para la extracción, procesamiento y análisis de información pública proveniente de fuentes oficiales. Automatiza la recolección diaria de publicaciones, integra datos externos mediante APIs, aplica análisis asistido por inteligencia artificial para clasificación de registros relevantes y genera reportes estructurados en Excel. La solución fue diseñada para ejecutarse de forma programada en infraestructura cloud run (Google Cloud), garantizando operación continua y escalable <br> Desarrollado durante una práctica profesional en el buffet de abogados XperttaLegal, respaldado por certificación emitida por la empresa.",
 
+    // Experiencia
+    titulo_experiencia: "Experiencia",
+    exp_badge: "Práctica Profesional",
+    exp_cargo: "Desarrollador de Software — Automatización de Procesos",
+    exp_desc1: "Durante mi práctica profesional en <strong>XperttaLegal</strong>, un reconocido bufete de abogados, participé activamente en el desarrollo e implementación de soluciones de automatización orientadas a optimizar los flujos de trabajo internos del despacho jurídico.",
+    exp_desc2: "Diseñé y desarrollé herramientas en <strong>Python</strong> para la extracción y procesamiento automatizado de información proveniente de documentos legales y fuentes de datos públicas, reduciendo significativamente los tiempos de gestión documental. Asimismo, integré APIs de inteligencia artificial para asistir en la clasificación y redacción de documentos administrativos, elevando la eficiencia operativa del equipo.",
+    exp_desc3: "Implementé un sistema de monitoreo automatizado de publicaciones judiciales con ejecución programada en infraestructura cloud, garantizando la disponibilidad continua de la solución. Esta experiencia me permitió aplicar buenas prácticas de ingeniería de software en un entorno profesional real con altos estándares de confidencialidad y calidad.",
+    exp_certificado: "Respaldado por certificado oficial emitido por la empresa",
+
     // Contacto
     titulo_contacto: "Contacto",
     correo: "Correo",
@@ -130,6 +140,7 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
     // Header
     nav_inicio: "Home",
     nav_sobre_mi: "About me",
+    nav_experiencia: "Experience",
     nav_lenguajes: "Languages",
     nav_proyectos: "Projects",
     nav_contacto: "Contact",
@@ -225,6 +236,15 @@ I bring not only solid technical skills, but also teamwork ability, effective co
     proyecto8_desc:
       "System developed in Python for extraction, processing and analysis of public information from official sources. Automates daily collection of publications, integrates external data through APIs, applies AI-assisted analysis for classification of relevant records and generates structured reports in Excel. The solution was designed to run on a scheduled basis on cloud run infrastructure (Google Cloud), ensuring continuous and scalable operation <br> Developed during a professional internship at the XperttaLegal law firm, supported by certification issued by the company.",
 
+    // Experiencia
+    titulo_experiencia: "Experience",
+    exp_badge: "Professional Internship",
+    exp_cargo: "Software Developer — Process Automation",
+    exp_desc1: "During my professional internship at <strong>XperttaLegal</strong>, a well-known law firm, I actively participated in the development and implementation of automation solutions aimed at optimizing the internal workflows of the legal office.",
+    exp_desc2: "I designed and developed tools in <strong>Python</strong> for the automated extraction and processing of information from legal documents and public data sources, significantly reducing document management times. I also integrated artificial intelligence APIs to assist in the classification and drafting of administrative documents, boosting the team's operational efficiency.",
+    exp_desc3: "I implemented an automated monitoring system for judicial publications with scheduled execution on cloud infrastructure, ensuring the continuous availability of the solution. This experience allowed me to apply software engineering best practices in a real professional environment with high standards of confidentiality and quality.",
+    exp_certificado: "Backed by an official certificate issued by the company",
+
     // Contacto
     titulo_contacto: "Contact",
     correo: "Email",
@@ -261,22 +281,24 @@ function cambiarIdioma(idioma) {
   try {
     // Header - navegación principal
     const navLinks = document.querySelectorAll("header > nav > a");
-    if (navLinks.length >= 5) {
+    if (navLinks.length >= 6) {
       navLinks[0].textContent = t.nav_inicio;
       navLinks[1].textContent = t.nav_sobre_mi;
-      navLinks[2].textContent = t.nav_lenguajes;
-      navLinks[3].textContent = t.nav_proyectos;
-      navLinks[4].textContent = t.nav_contacto;
+      navLinks[2].textContent = t.nav_experiencia;
+      navLinks[3].textContent = t.nav_lenguajes;
+      navLinks[4].textContent = t.nav_proyectos;
+      navLinks[5].textContent = t.nav_contacto;
     }
 
     // Menu móvil
     const menuLinks = document.querySelectorAll("#menu > a");
-    if (menuLinks.length >= 5) {
+    if (menuLinks.length >= 6) {
       menuLinks[0].textContent = t.nav_inicio;
       menuLinks[1].textContent = t.nav_sobre_mi;
-      menuLinks[2].textContent = t.nav_lenguajes;
-      menuLinks[3].textContent = t.nav_proyectos;
-      menuLinks[4].textContent = t.nav_contacto;
+      menuLinks[2].textContent = t.nav_experiencia;
+      menuLinks[3].textContent = t.nav_lenguajes;
+      menuLinks[4].textContent = t.nav_proyectos;
+      menuLinks[5].textContent = t.nav_contacto;
     }
 
     const portafolioTitle = document.querySelector("header div h3");
@@ -470,6 +492,24 @@ function cambiarIdioma(idioma) {
       boton.textContent = t.cerrar;
     });
 
+    // Experiencia
+    const tituloExp = document.querySelector("#Experiencia");
+    if (tituloExp) tituloExp.textContent = t.titulo_experiencia;
+
+    const expBadge = document.querySelector(".exp_badge");
+    if (expBadge) expBadge.textContent = t.exp_badge;
+
+    const expCargo = document.querySelector(".exp_cargo");
+    if (expCargo) expCargo.textContent = t.exp_cargo;
+
+    const expDescs = document.querySelectorAll(".exp_descripcion");
+    if (expDescs[0]) expDescs[0].innerHTML = t.exp_desc1;
+    if (expDescs[1]) expDescs[1].innerHTML = t.exp_desc2;
+    if (expDescs[2]) expDescs[2].innerHTML = t.exp_desc3;
+
+    const expCert = document.querySelector(".exp_certificado");
+    if (expCert) expCert.innerHTML = `<span class="exp_cert_icon">✔</span> ${t.exp_certificado}`;
+
     // Contacto
     const contactoTitle = document.querySelector("#Contacto");
     if (contactoTitle) contactoTitle.textContent = t.titulo_contacto;
@@ -554,12 +594,13 @@ function cambiarIdioma(idioma) {
     if (navFooterH2) navFooterH2.textContent = t.footer_navegacion;
 
     const navFooter = document.querySelectorAll(".footer_navegacion a");
-    if (navFooter.length >= 5) {
+    if (navFooter.length >= 6) {
       navFooter[0].textContent = t.nav_inicio;
       navFooter[1].textContent = t.nav_sobre_mi;
-      navFooter[2].textContent = t.nav_lenguajes;
-      navFooter[3].textContent = t.nav_proyectos;
-      navFooter[4].textContent = t.nav_contacto;
+      navFooter[2].textContent = t.nav_experiencia;
+      navFooter[3].textContent = t.nav_lenguajes;
+      navFooter[4].textContent = t.nav_proyectos;
+      navFooter[5].textContent = t.nav_contacto;
     }
 
     const footerContacto = document.querySelector(".footer_Contacto");
