@@ -40,7 +40,7 @@ Aporto no solo habilidades técnicas sólidas, sino también capacidad de trabaj
     backend: "Backend",
     base_datos: "Base de datos",
     desarrollo_web: "Desarrollo Web",
-    desarrollo_software: "Desarrollo Software",
+    desarrollo_software: "Diseño de software",
 
     especialidad_backend_titulo: "Desarrollo Backend",
     especialidad_backend_desc:
@@ -176,7 +176,7 @@ I bring not only solid technical skills, but also teamwork ability, effective co
     backend: "Backend",
     base_datos: "Database",
     desarrollo_web: "Web Development",
-    desarrollo_software: "Software Development",
+    desarrollo_software: "Software Design",
 
     especialidad_backend_titulo: "Backend Development",
     especialidad_backend_desc:
