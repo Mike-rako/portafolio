@@ -20,6 +20,7 @@
 
 .Seccion_sobre_mi #datos h4 {
     font-size: 13pt;
+    font-family:"DM Sans", monospace, sans-serif;
 }
 
 /* Grid de dos columnas: 
@@ -45,8 +46,8 @@
     gap: 30px;
     margin: 15px;
     padding: 15px;
+    align-items: stretch; /* todas las tarjetas igual de altas */
 }
-
 /* Botón de descarga del CV — centrado y con borde primario */
 #CV_Sobre_mi {
     margin: 0px auto;
@@ -101,13 +102,18 @@
 .tarjetas_especializaciones {
     padding: 30px 20px;
     text-align: center;
-    justify-items: center;
     border: var(--color-border) solid 2px;
     border-radius: 20px;
     background-color: var(--color-bg-darker);
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
+
+    /* Esto es lo clave: */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* o flex-start si prefieres el contenido arriba */
 }
 
 .tarjetas_especializaciones::before {
