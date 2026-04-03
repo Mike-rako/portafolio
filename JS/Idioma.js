@@ -88,10 +88,6 @@ const traducciones = {
     proyecto2_desc_corta:
       "App de escritorio en Python con interfaz dark mode (CustomTkinter) para automatizar clicks del mouse en Windows. Permite configurar posición, intervalo desde 0.1s, tipo de click y controlar todo con la barra espaciadora. Ventana flotante siempre visible.",
 
-    proyecto3_titulo: "Sistema de Heladería",
-    proyecto3_desc_corta:
-      "App de escritorio en C# con Windows Forms que aplica POO real: herencia, polimorfismo y encapsulamiento en una jerarquía de clases Helado → Nieve/Lácteo. Calcula precios con descuentos, impuestos y toppings de forma dinámica por cada orden.",
-
     proyecto4_titulo: "Tienda Musical Web",
     proyecto4_desc_corta:
       "Tienda online multi-página con catálogo, detalle de producto, filtros por precio y carrito persistente con localStorage. Construida con JavaScript ES6 modular y Bootstrap 5 — sin dependencias adicionales ni frameworks JS.",
@@ -117,8 +113,7 @@ const traducciones = {
       "El portafolio que estás viendo ahora mismo. Desarrollado desde cero con HTML, CSS y JavaScript vanilla sin ningún framework. Incluye animaciones fluidas con Anime.js, un sistema de traducción ES/EN que cambia todo el contenido sin recargar la página, modo claro/oscuro con persistencia en localStorage y diseño totalmente responsive para móvil, tablet y escritorio.",
     proyecto2_desc:
       "Aplicación de escritorio para Windows que automatiza clicks del mouse con una interfaz dark mode construida en CustomTkinter. Permite seleccionar la posición exacta del cursor, configurar el intervalo entre clicks (desde 0.1 segundos), elegir entre click izquierdo, derecho o doble, y controlar la ejecución con la barra espaciadora. La ventana se mantiene flotante sobre cualquier otra aplicación. Organizado en módulos separados: GUI, lógica de clicks y funciones auxiliares.",
-    proyecto3_desc:
-      "Sistema de gestión de pedidos para heladería desarrollado en C# con Windows Forms, con enfoque en demostrar programación orientada a objetos. Implementa una jerarquía de clases donde Helado es la clase base abstracta, y Nieve y Lácteo heredan de ella con comportamientos distintos: descuentos en ciertos sabores, impuestos sobre lácteos y precios adicionales por toppings. Calcula automáticamente subtotales, aplica reglas de negocio y genera una factura detallada al finalizar cada orden.",
+   
     proyecto4_desc:
       "Tienda online de instrumentos musicales con cuatro páginas independientes (Home, Categoría, Producto, Carrito) conectadas mediante parámetros en la URL. El carrito persiste entre sesiones con localStorage y actualiza el contador del navbar en tiempo real. Incluye filtros por precio, productos relacionados dinámicos y está estructurado con ES6 modules para separar responsabilidades. Construida solo con HTML5, CSS3, JavaScript vanilla y Bootstrap 5.3.",
     proyecto5_desc:
@@ -256,10 +251,6 @@ const traducciones = {
     proyecto2_desc_corta:
       "Windows desktop app with a dark mode GUI (CustomTkinter) to automate mouse clicks. Configure position, interval from 0.1s, click type, and toggle on/off with the spacebar. Stays floating on top of any window.",
 
-    proyecto3_titulo: "Ice Cream Shop System",
-    proyecto3_desc_corta:
-      "C# desktop app with Windows Forms showcasing real OOP: inheritance, polymorphism and encapsulation across an Helado → Nieve/Lácteo class hierarchy. Dynamically calculates prices with discounts, taxes and toppings per order.",
-
     proyecto4_titulo: "Music Store Web",
     proyecto4_desc_corta:
       "Multi-page online store with catalog, product detail, price filters and a persistent cart using localStorage. Built with modular ES6 JavaScript and Bootstrap 5 — no JS frameworks or extra dependencies.",
@@ -285,8 +276,6 @@ const traducciones = {
       "The portfolio you're currently viewing. Built from scratch with vanilla HTML, CSS and JavaScript — no frameworks at all. Features smooth animations powered by Anime.js, a full bilingual ES/EN system that swaps all content without reloading the page, light/dark mode with localStorage persistence, and a responsive layout that works across mobile, tablet and desktop.",
     proyecto2_desc:
       "Windows desktop application that automates mouse clicks through a dark mode interface built with CustomTkinter. Lets you pick the exact screen position, set the interval between clicks (from 0.1 seconds), choose between left, right or double click, and start/stop everything with the spacebar. The window stays floating on top of any other application at all times. Code is organized into separate modules: GUI, click logic and helper functions.",
-    proyecto3_desc:
-      "Ice cream shop order management system built in C# with Windows Forms, designed to demonstrate real object-oriented programming. Implements a class hierarchy where Helado is the abstract base class, with Nieve and Lácteo inheriting from it with different behaviors: flavor-based discounts, taxes on dairy products and extra charges for toppings. Automatically calculates subtotals, applies business rules and generates a detailed receipt when the order is finished.",
     proyecto4_desc:
       "Multi-page online music store with four independent pages (Home, Category, Product, Cart) connected through URL parameters. The cart persists between sessions using localStorage and updates the navbar counter in real time. Includes price sorting filters, dynamic related products and is structured with ES6 modules to separate concerns. Built with only HTML5, CSS3, vanilla JavaScript and Bootstrap 5.3 — no frameworks.",
     proyecto5_desc:
@@ -499,17 +488,16 @@ function cambiarIdioma(idioma) {
     if (filtroDesk) filtroDesk.textContent = t.filtro_desktop;
 
     // Tarjetas — nombres y descripciones cortas
-    const cardData = [
-      // orden en el DOM: P5, P8, P7, P6, P1, P4, P3, P2
-      { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc_corta },
-      { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc_corta },
-      { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc_corta },
-      { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc_corta },
-      { titulo: t.proyecto1_titulo, desc: t.proyecto1_desc_corta },
-      { titulo: t.proyecto4_titulo, desc: t.proyecto4_desc_corta },
-      { titulo: t.proyecto3_titulo, desc: t.proyecto3_desc_corta },
-      { titulo: t.proyecto2_titulo, desc: t.proyecto2_desc_corta },
-    ];
+const cardData = [
+  { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc_corta },
+  { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc_corta },
+  { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc_corta },
+  { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc_corta },
+  { titulo: t.proyecto1_titulo, desc: t.proyecto1_desc_corta },
+  { titulo: t.proyecto4_titulo, desc: t.proyecto4_desc_corta },
+  { titulo: t.proyecto2_titulo, desc: t.proyecto2_desc_corta },
+];
+
 
     document.querySelectorAll(".proyecto-card").forEach((card, i) => {
       if (cardData[i]) {
@@ -546,15 +534,14 @@ function cambiarIdioma(idioma) {
     // Div oculto de compatibilidad
     const proyectosHidden = document.querySelectorAll("#contenedor_Proyectos .Proyectos");
     const proyectosDescFull = [
-      { titulo: t.proyecto1_titulo, desc: t.proyecto1_desc },
-      { titulo: t.proyecto2_titulo, desc: t.proyecto2_desc },
-      { titulo: t.proyecto3_titulo, desc: t.proyecto3_desc },
-      { titulo: t.proyecto4_titulo, desc: t.proyecto4_desc },
-      { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc },
-      { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc },
-      { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc },
-      { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc },
-    ];
+    { titulo: t.proyecto1_titulo, desc: t.proyecto1_desc },
+    { titulo: t.proyecto2_titulo, desc: t.proyecto2_desc },
+    { titulo: t.proyecto4_titulo, desc: t.proyecto4_desc },
+    { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc },
+    { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc },
+    { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc },
+    { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc },
+  ];
     proyectosHidden.forEach((p, i) => {
       if (proyectosDescFull[i]) {
         const h4 = p.querySelector("h4");
