@@ -407,12 +407,11 @@
    ============================================================ */
 .proyecto-footer {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   padding: 14px 22px;
   border-top: 1px solid var(--pc-card-border);
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 56px;
 }
 
 .proyecto-card.destacada .proyecto-footer {
@@ -420,7 +419,7 @@
 }
 
 /* Enlace "Ver código" */
-.proyecto-ver-codigo {
+.proyecto-ver-codigo, .proyecto-ver-demo {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -432,7 +431,7 @@
   transition: gap 0.25s ease;
 }
 
-.proyecto-ver-codigo:hover {
+.proyecto-ver-codigo:hover, .proyecto-ver-demo:hover {
   gap: 10px;
 }
 .codigo-arrow {
@@ -915,6 +914,7 @@ body.modal-abierto .Proyectos:hover::before {
   }
   .proyecto-footer {
     padding: 12px 18px;
+    gap:10px
   }
   .Proyectos.modal {
     scale: 1;

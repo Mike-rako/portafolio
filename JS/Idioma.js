@@ -11,9 +11,9 @@ const traducciones = {
     portafolio: "Portafolio",
 
     // Main - Inicio
-    desarrollador: "Desarrollador Backend",
+    desarrollador: "Desarrollador de Software",
     descripcion_inicio:
-    "Desarrollo aplicaciones, bases de datos y APIs, <br>automatizo procesos y gestiono servidores para su despliegue en entornos reales.",
+      "Full Stack Developer · Backend Specialist <br /> Construyo sistemas robustos, APIs escalables y soluciones que generan impacto real en producción",
     github_text: "Git Hub",
     linkedin_text: "LinkedIn",
     descargar_cv: "Descargar CV",
@@ -21,14 +21,11 @@ const traducciones = {
 
     // Sobre mí
     titulo_sobre_mi: "Sobre mí",
-    
-    descripcion_sobre_mi: `Soy Michael David Barillas Núñez, desarrollador de software backend enfocado en automatización y procesamiento de datos.<br><br>
+    descripcion_sobre_mi: `Soy Michael David Barillas Núñez, desarrollador de software enfocado en resultados con especialización en Backend. Transformo requisitos de negocio en soluciones técnicas eficientes, escalables y mantenibles que funcionan en producción real.<br /><br />
 
-    Desarrollo herramientas para extraer, transformar y analizar información desde fuentes reales utilizando Python, C#, SQL y tecnologías web cuando es necesario, automatizando procesos complejos y reduciendo el trabajo manual.<br><br>
+Con experiencia comprobada en Python, C#, SQL y tecnologías web, he entregado sistemas de gestión empresarial, APIs RESTful y aplicaciones de escritorio con integración de inteligencia artificial. Tengo dominio de Linux para administración de servidores y despliegue en infraestructura cloud.<br /><br />
 
-    Tengo experiencia en desarrollo de APIs, sistemas de gestión y scripts de automatización, así como en administración de servidores Linux, despliegue de aplicaciones e integración de inteligencia artificial para el análisis de datos.<br><br>
-
-    Mi enfoque es crear soluciones prácticas, eficientes y mantenibles que aporten valor desde el primer momento, manteniéndome en constante aprendizaje y adaptación a nuevas tecnologías.`,
+Soy un desarrollador que no solo escribe código, sino que entiende el problema. Aporto pensamiento analítico, comunicación efectiva, aprendizaje continuo y un compromiso real con la calidad del software que entrego.`,
 
     // Habilidades blandas
     creatividad: "Creatividad",
@@ -40,7 +37,7 @@ const traducciones = {
     gestion_tiempo: "Gestión del tiempo",
 
     // Especializaciones
-    backend: "Desarrollo Backend",
+    backend: "Backend",
     base_datos: "Base de datos",
     desarrollo_web: "Desarrollo Web",
     desarrollo_software: "Diseño de Software",
@@ -74,10 +71,22 @@ const traducciones = {
     filtro_web: "Web",
     filtro_desktop: "Desktop",
     ver_codigo: "Ver código",
+    ver_demo:"Ver demo",
     cerrar: "Cerrar",
     badge_profesional: "Práctica Profesional",
     badge_destacado: "Proyecto Destacado",
+    badge_cliente: "Cliente Real",
+    badge_academico: "Proyecto Académico",
     ver_github: "Ver todos en GitHub",
+
+    // Experiencia — servidor Linux
+    exp_servidor_titulo: "Administración de Servidor Linux",
+    exp_servidor_cargo: "Ubuntu Server — Gestión y Despliegue",
+    exp_servidor_badge: "Infraestructura",
+    exp_servidor_fecha: "2024 — presente",
+    exp_servidor_desc1: "Administro un servidor <strong>Ubuntu Server</strong> propio donde gestiono servicios, configuro el firewall con <strong>UFW</strong>, monitoreo procesos en tiempo real y despliego aplicaciones en un entorno real de producción.",
+    exp_servidor_desc2: "Manejo acceso remoto por <strong>SSH</strong>, administración de usuarios y permisos, configuración de servicios con <strong>systemctl</strong> y gestión del sistema de archivos. El video adjunto muestra una demostración en vivo de estas capacidades.",
+    exp_servidor_video: "Ver demostración",
 
     // Proyectos — títulos y descripciones cortas (para tarjetas nuevas)
     proyecto1_titulo: "Portafolio Personal",
@@ -87,6 +96,10 @@ const traducciones = {
     proyecto2_titulo: "Auto Clicker",
     proyecto2_desc_corta:
       "App de escritorio en Python con interfaz dark mode (CustomTkinter) para automatizar clicks del mouse en Windows. Permite configurar posición, intervalo desde 0.1s, tipo de click y controlar todo con la barra espaciadora. Ventana flotante siempre visible.",
+
+    proyecto3_titulo: "Sistema de Heladería",
+    proyecto3_desc_corta:
+      "App de escritorio en C# con Windows Forms que aplica POO real: herencia, polimorfismo y encapsulamiento en una jerarquía de clases Helado → Nieve/Lácteo. Calcula precios con descuentos, impuestos y toppings de forma dinámica por cada orden.",
 
     proyecto4_titulo: "Tienda Musical Web",
     proyecto4_desc_corta:
@@ -113,7 +126,8 @@ const traducciones = {
       "El portafolio que estás viendo ahora mismo. Desarrollado desde cero con HTML, CSS y JavaScript vanilla sin ningún framework. Incluye animaciones fluidas con Anime.js, un sistema de traducción ES/EN que cambia todo el contenido sin recargar la página, modo claro/oscuro con persistencia en localStorage y diseño totalmente responsive para móvil, tablet y escritorio.",
     proyecto2_desc:
       "Aplicación de escritorio para Windows que automatiza clicks del mouse con una interfaz dark mode construida en CustomTkinter. Permite seleccionar la posición exacta del cursor, configurar el intervalo entre clicks (desde 0.1 segundos), elegir entre click izquierdo, derecho o doble, y controlar la ejecución con la barra espaciadora. La ventana se mantiene flotante sobre cualquier otra aplicación. Organizado en módulos separados: GUI, lógica de clicks y funciones auxiliares.",
-   
+    proyecto3_desc:
+      "Sistema de gestión de pedidos para heladería desarrollado en C# con Windows Forms, con enfoque en demostrar programación orientada a objetos. Implementa una jerarquía de clases donde Helado es la clase base abstracta, y Nieve y Lácteo heredan de ella con comportamientos distintos: descuentos en ciertos sabores, impuestos sobre lácteos y precios adicionales por toppings. Calcula automáticamente subtotales, aplica reglas de negocio y genera una factura detallada al finalizar cada orden.",
     proyecto4_desc:
       "Tienda online de instrumentos musicales con cuatro páginas independientes (Home, Categoría, Producto, Carrito) conectadas mediante parámetros en la URL. El carrito persiste entre sesiones con localStorage y actualiza el contador del navbar en tiempo real. Incluye filtros por precio, productos relacionados dinámicos y está estructurado con ES6 modules para separar responsabilidades. Construida solo con HTML5, CSS3, JavaScript vanilla y Bootstrap 5.3.",
     proyecto5_desc:
@@ -125,7 +139,11 @@ const traducciones = {
     proyecto8_desc:
       "Pipeline de datos automatizado que corre diariamente en Google Cloud Run. Usa Selenium con selenium-stealth para evadir detección anti-bot al scrapear el Boletín Judicial oficial de Costa Rica, extrae datos no estructurados de cada remate (finca, monto, ubicación, fechas, acreedor, deudor) con regex avanzadas, los envía a Gemini AI para evaluar potencial de inversión y genera un reporte Excel organizado por meses. El archivo se sincroniza automáticamente con Google Drive. Desarrollado en XperttaLegal, respaldado por certificado oficial.",
 
-    // Experiencia
+    proyecto9_titulo: "Sistema de Gestión de Verdulería",
+    proyecto9_desc_corta:
+      "Software de escritorio desarrollado y vendido a un negocio local. Gestiona inventario, ventas y clientes con interfaz Windows Forms y base de datos SQLite integrada. Sin repositorio público — el código pertenece al cliente.",
+    proyecto9_desc:
+      "Sistema de gestión completo para una verdulería local, desarrollado en C# con Windows Forms y SQLite como base de datos embebida. Incluye control de inventario con alertas de stock bajo, registro de ventas, gestión de clientes y generación de reportes. Fue vendido y entregado como producto terminado al negocio. Por acuerdo con el cliente el código no es público, pero el video de demostración muestra el sistema en funcionamiento completo.",
     titulo_experiencia: "Experiencia",
     exp_badge: "Práctica Profesional",
     exp_cargo: "Desarrollador de Software — Automatización de Procesos",
@@ -160,6 +178,10 @@ const traducciones = {
     footer_ubicacion: "Costa Rica, San José",
     trabajemos_juntos: "Trabajemos juntos",
     derechos: "&copy;2025 Michael Barillas Nuñez — Portafolio",
+
+    badge_certificado: "✔ Certificado",
+    badge_vendido: "✔ Vendido",
+    badge_cert_xpertta: "✔ Certificado XperttaLegal",
   },
 
   en: {
@@ -173,9 +195,9 @@ const traducciones = {
     portafolio: "Portfolio",
 
     // Main - Inicio
-    desarrollador: "Backend Developer",
+    desarrollador: "Software Developer",
     descripcion_inicio:
-      "I develop applications, databases, and APIs,<br> automate processes, and manage servers in real-world environments.",
+      "Full Stack Developer · Backend Specialist <br /> I build robust systems, scalable APIs, and solutions that create real impact in production",
     github_text: "GitHub",
     linkedin_text: "LinkedIn",
     descargar_cv: "Download CV",
@@ -183,15 +205,11 @@ const traducciones = {
 
     // About Me
     titulo_sobre_mi: "About Me",
-    
-    descripcion_sobre_mi: `I am Michael David Barillas Núñez, a backend software developer focused on automation and data processing.<br><br>
+    descripcion_sobre_mi: `I'm Michael David Barillas Núñez, a results-driven software developer specialized in Backend engineering. I turn business requirements into efficient, scalable, and maintainable technical solutions that work in real production environments.<br /><br />
 
-    I build tools to extract, transform, and analyze real-world data using Python, C#, and SQL, automating complex processes and reducing manual work.<br><br>
+With proven experience in Python, C#, SQL, and web technologies, I have delivered enterprise management systems, RESTful APIs, and desktop applications with AI integrations. I'm proficient in Linux for server administration and cloud infrastructure deployment.<br /><br />
 
-    I have experience developing APIs, management systems, and automation scripts, as well as managing Linux servers, deploying applications, and integrating artificial intelligence for data analysis.<br><br>
-
-    My focus is on creating practical, efficient, and maintainable solutions that deliver value from day one, while continuously learning and adapting 
-    to new technologies.`,
+I'm a developer who doesn't just write code — I understand the problem first. I bring analytical thinking, clear communication, continuous learning, and a genuine commitment to delivering high-quality software.`,
 
     // Soft Skills
     creatividad: "Creativity",
@@ -203,10 +221,10 @@ const traducciones = {
     gestion_tiempo: "Time Management",
 
     // Specializations
-    backend: "Backend Development",
+    backend: "Backend",
     base_datos: "Database",
     desarrollo_web: "Web Development",
-    desarrollo_software: "Software Development",
+    desarrollo_software: "Software Design",
 
     especialidad_backend_titulo: "Backend Development",
     especialidad_backend_desc:
@@ -237,10 +255,22 @@ const traducciones = {
     filtro_web: "Web",
     filtro_desktop: "Desktop",
     ver_codigo: "View code",
+    ver_demo:"Watch demo",
     cerrar: "Close",
     badge_profesional: "Professional Internship",
     badge_destacado: "Featured Project",
+    badge_cliente: "Real Client",
+    badge_academico: "Academic Project",
     ver_github: "See all on GitHub",
+
+    // Experience — Linux server
+    exp_servidor_titulo: "Linux Server Administration",
+    exp_servidor_cargo: "Ubuntu Server — Management & Deployment",
+    exp_servidor_badge: "Infrastructure",
+    exp_servidor_fecha: "2024 — present",
+    exp_servidor_desc1: "I manage my own <strong>Ubuntu Server</strong> where I run services, configure the firewall with <strong>UFW</strong>, monitor processes in real time, and deploy applications in a real production environment.",
+    exp_servidor_desc2: "I handle remote access via <strong>SSH</strong>, user and permission management, service configuration with <strong>systemctl</strong>, and file system management. The attached video shows a live demonstration of these skills.",
+    exp_servidor_video: "Watch demo",
 
     // Projects — short descriptions for cards
     proyecto1_titulo: "Personal Portfolio",
@@ -250,6 +280,10 @@ const traducciones = {
     proyecto2_titulo: "Auto Clicker",
     proyecto2_desc_corta:
       "Windows desktop app with a dark mode GUI (CustomTkinter) to automate mouse clicks. Configure position, interval from 0.1s, click type, and toggle on/off with the spacebar. Stays floating on top of any window.",
+
+    proyecto3_titulo: "Ice Cream Shop System",
+    proyecto3_desc_corta:
+      "C# desktop app with Windows Forms showcasing real OOP: inheritance, polymorphism and encapsulation across an Helado → Nieve/Lácteo class hierarchy. Dynamically calculates prices with discounts, taxes and toppings per order.",
 
     proyecto4_titulo: "Music Store Web",
     proyecto4_desc_corta:
@@ -276,6 +310,8 @@ const traducciones = {
       "The portfolio you're currently viewing. Built from scratch with vanilla HTML, CSS and JavaScript — no frameworks at all. Features smooth animations powered by Anime.js, a full bilingual ES/EN system that swaps all content without reloading the page, light/dark mode with localStorage persistence, and a responsive layout that works across mobile, tablet and desktop.",
     proyecto2_desc:
       "Windows desktop application that automates mouse clicks through a dark mode interface built with CustomTkinter. Lets you pick the exact screen position, set the interval between clicks (from 0.1 seconds), choose between left, right or double click, and start/stop everything with the spacebar. The window stays floating on top of any other application at all times. Code is organized into separate modules: GUI, click logic and helper functions.",
+    proyecto3_desc:
+      "Ice cream shop order management system built in C# with Windows Forms, designed to demonstrate real object-oriented programming. Implements a class hierarchy where Helado is the abstract base class, with Nieve and Lácteo inheriting from it with different behaviors: flavor-based discounts, taxes on dairy products and extra charges for toppings. Automatically calculates subtotals, applies business rules and generates a detailed receipt when the order is finished.",
     proyecto4_desc:
       "Multi-page online music store with four independent pages (Home, Category, Product, Cart) connected through URL parameters. The cart persists between sessions using localStorage and updates the navbar counter in real time. Includes price sorting filters, dynamic related products and is structured with ES6 modules to separate concerns. Built with only HTML5, CSS3, vanilla JavaScript and Bootstrap 5.3 — no frameworks.",
     proyecto5_desc:
@@ -286,6 +322,12 @@ const traducciones = {
       "Desktop application in Python (PyQt5) developed for the XperttaLegal law firm. Reads Word documents with python-docx, extracts specific fields and sends the content to the Gemini API to generate legal document drafts in the correct format. Handles multiple entities (clients, case files), stores history persistently and exports reports to Excel. Was used in real production during the internship. Source code is confidential but the project is backed by an official certificate from the company.",
     proyecto8_desc:
       "Automated data pipeline that runs daily on Google Cloud Run. Uses Selenium with selenium-stealth to bypass anti-bot detection when scraping Costa Rica's official Judicial Bulletin. Extracts unstructured data from each auction listing (property ID, base amount, location, dates, creditor, debtor) using advanced regex, sends them to Gemini AI to assess investment potential, and generates a month-organized Excel report. The file syncs automatically to Google Drive. Developed at XperttaLegal, backed by official company certificate.",
+
+    proyecto9_titulo: "Vegetable Store Management System",
+    proyecto9_desc_corta:
+      "Desktop software developed and sold to a local business. Manages inventory, sales and customers with a Windows Forms interface and embedded SQLite database. No public repository — code belongs to the client.",
+    proyecto9_desc:
+      "Complete management system for a local vegetable store, built in C# with Windows Forms and SQLite as the embedded database. Includes inventory control with low-stock alerts, sales tracking, customer management and report generation. Sold and delivered as a finished product to the business owner. Code is not public by agreement with the client, but the demo video shows the full system in action.",
 
     // Experience
     titulo_experiencia: "Experience",
@@ -322,6 +364,10 @@ const traducciones = {
     footer_ubicacion: "Costa Rica, San José",
     trabajemos_juntos: "Let's work together",
     derechos: "&copy;2025 Michael Barillas Nuñez — Portfolio",
+
+    badge_certificado: "✔ Certified",
+    badge_vendido: "✔ Sold",
+    badge_cert_xpertta: "✔ XperttaLegal Certificate",
   },
 };
 
@@ -488,16 +534,17 @@ function cambiarIdioma(idioma) {
     if (filtroDesk) filtroDesk.textContent = t.filtro_desktop;
 
     // Tarjetas — nombres y descripciones cortas
-const cardData = [
-  { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc_corta },
-  { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc_corta },
-  { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc_corta },
-  { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc_corta },
-  { titulo: t.proyecto1_titulo, desc: t.proyecto1_desc_corta },
-  { titulo: t.proyecto4_titulo, desc: t.proyecto4_desc_corta },
-  { titulo: t.proyecto2_titulo, desc: t.proyecto2_desc_corta },
-];
-
+    const cardData = [
+      // orden en el DOM: P5, P8, P7, P6, P1, P4, P2, P9
+      { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc_corta },
+      { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc_corta },
+      { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc_corta },
+      { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc_corta },
+      { titulo: t.proyecto1_titulo, desc: t.proyecto1_desc_corta },
+      { titulo: t.proyecto4_titulo, desc: t.proyecto4_desc_corta },
+      { titulo: t.proyecto9_titulo, desc: t.proyecto9_desc_corta },
+      { titulo: t.proyecto2_titulo, desc: t.proyecto2_desc_corta },
+    ];
 
     document.querySelectorAll(".proyecto-card").forEach((card, i) => {
       if (cardData[i]) {
@@ -512,16 +559,18 @@ const cardData = [
     document.querySelectorAll(".proyecto-img-badge.profesional").forEach(b => {
       b.textContent = t.badge_profesional;
     });
-    document.querySelectorAll('[data-i18n="badge_destacado"]').forEach(b => {
-      b.textContent = t.badge_destacado;
-    });
 
     // Botones ver código en tarjetas nuevas
     document.querySelectorAll(".proyecto-ver-codigo").forEach(btn => {
       const textNode = [...btn.childNodes].find(n => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
       if (textNode) textNode.textContent = "\n              " + t.ver_codigo + "\n              ";
-      // alternativa simple:
       btn.firstChild.textContent = t.ver_codigo + " ";
+    });
+
+    document.querySelectorAll(".proyecto-ver-demo").forEach(btn => {
+      const textNode = [...btn.childNodes].find(n => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
+      if (textNode) textNode.textContent = "\n              " + t.demo + "\n              ";
+      btn.firstChild.textContent = t.ver_demo + " ";
     });
 
     // Botón ver todos GitHub
@@ -531,17 +580,18 @@ const cardData = [
       if (textNode) textNode.textContent = " " + t.ver_github;
     }
 
-    // Div oculto de compatibilidad
+    // Div oculto de compatibilidad — orden: P1, P2, P4, P5, P6, P7, P8, P9
     const proyectosHidden = document.querySelectorAll("#contenedor_Proyectos .Proyectos");
     const proyectosDescFull = [
-    { titulo: t.proyecto1_titulo, desc: t.proyecto1_desc },
-    { titulo: t.proyecto2_titulo, desc: t.proyecto2_desc },
-    { titulo: t.proyecto4_titulo, desc: t.proyecto4_desc },
-    { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc },
-    { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc },
-    { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc },
-    { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc },
-  ];
+      { titulo: t.proyecto1_titulo, desc: t.proyecto1_desc },
+      { titulo: t.proyecto2_titulo, desc: t.proyecto2_desc },
+      { titulo: t.proyecto4_titulo, desc: t.proyecto4_desc },
+      { titulo: t.proyecto5_titulo, desc: t.proyecto5_desc },
+      { titulo: t.proyecto6_titulo, desc: t.proyecto6_desc },
+      { titulo: t.proyecto7_titulo, desc: t.proyecto7_desc },
+      { titulo: t.proyecto8_titulo, desc: t.proyecto8_desc },
+      { titulo: t.proyecto9_titulo, desc: t.proyecto9_desc },
+    ];
     proyectosHidden.forEach((p, i) => {
       if (proyectosDescFull[i]) {
         const h4 = p.querySelector("h4");
@@ -554,6 +604,34 @@ const cardData = [
     // Botones del div oculto
     document.querySelectorAll(".boton_proyecto").forEach(b => { b.textContent = t.ver_codigo; });
     document.querySelectorAll(".cerrar_proyecto").forEach(b => { b.textContent = t.cerrar; });
+
+    // Experiencia — servidor Linux
+    const expServidorTitulo = document.getElementById("exp_servidor_titulo");
+    if (expServidorTitulo) expServidorTitulo.textContent = t.exp_servidor_titulo;
+    const expServidorCargo = document.getElementById("exp_servidor_cargo");
+    if (expServidorCargo) expServidorCargo.textContent = t.exp_servidor_cargo;
+    const expServidorDesc1 = document.getElementById("exp_servidor_desc1");
+    if (expServidorDesc1) expServidorDesc1.innerHTML = t.exp_servidor_desc1;
+    const expServidorDesc2 = document.getElementById("exp_servidor_desc2");
+    if (expServidorDesc2) expServidorDesc2.innerHTML = t.exp_servidor_desc2;
+    const expServidorVideo = document.querySelector("#exp_video_btn .exp_video_texto");
+    if (expServidorVideo) expServidorVideo.textContent = t.exp_servidor_video;
+
+    // Badges cliente y académico
+    document.querySelectorAll('[data-i18n="badge_cliente"]').forEach(b => {
+      b.textContent = t.badge_cliente;
+    });
+    document.querySelectorAll('[data-i18n="badge_academico"]').forEach(b => {
+      b.textContent = t.badge_academico;
+    });
+    document.querySelectorAll('[data-i18n="badge_destacado"]').forEach(b => {
+      b.textContent = t.badge_destacado;
+    });
+
+    // Badges de certificado y vendido
+    document.querySelectorAll(".proyecto-cert[data-i18n]").forEach(el => {
+      el.textContent = t[el.dataset.i18n];
+    });
 
     // Experiencia
     const tituloExp = document.querySelector("#Experiencia");
