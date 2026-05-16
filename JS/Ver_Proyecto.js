@@ -656,21 +656,50 @@ document.querySelectorAll(".Proyectos p.limitado").forEach(p => {
 
     /* ---- Responsive ---- */
     @media (max-width: 700px) {
+      #modal-proyecto-nuevo {
+        align-items: center;
+        padding: 12px;
+        padding-bottom: calc(12px + env(safe-area-inset-bottom, 20px));
+      }
+
       .mpn-panel {
         grid-template-columns: 1fr;
-        max-height: 92vh;
-        border-radius: 16px 16px 0 0;
-        align-self: flex-end;
-        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 85dvh;
+        max-height: 85dvh;
+        border-radius: 16px;
+        overflow: hidden;
       }
 
-      #modal-proyecto-nuevo {
-        align-items: flex-end;
-        padding: 0;
+      .mpn-galeria-wrapper {
+        flex-shrink: 0;
+        height: 220px;
+        min-height: 220px;
+        max-height: 220px;
       }
 
-      .mpn-galeria-wrapper { min-height: 220px; }
-      .mpn-contenido { padding: 24px 20px; max-height: 55vh; }
+      .mpn-galeria {
+        height: 100%;
+        min-height: unset;
+      }
+
+      .mpn-contenido {
+        flex: 1;
+        overflow-y: auto;
+        padding: 20px 18px;
+        padding-bottom: 24px;
+        max-height: unset;
+      }
+
+      .mpn-cerrar {
+        top: 10px;
+        right: 10px;
+        background: rgba(0,0,0,0.6);
+        border-color: rgba(255,255,255,0.2);
+        color: #fff;
+      }
     }
 
     /* ---- Sección proyectos — Tema claro ---- */
